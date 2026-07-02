@@ -1,0 +1,138 @@
+import install1 from '../../assets/images/install-1.jpeg'
+import install2 from '../../assets/images/install-2.jpeg'
+import install3 from '../../assets/images/install-3.jpeg'
+import install5 from '../../assets/images/install-5.jpeg'
+import install6 from '../../assets/images/install-6.jpeg'
+import install7 from '../../assets/images/install-7.jpeg'
+import solar4 from '../../assets/images/solar-4.jpg'
+import solar6 from '../../assets/images/solar-6.jpg'
+import solar7 from '../../assets/images/solar-7.jpg'
+
+export const projectCategories = ['All', 'Residential', 'Commercial', 'Industrial']
+
+export const projectsData = [
+  {
+    id: 1,
+    image: install1,
+    title: 'Modern Villa Rooftop Solar',
+    location: 'Patna, Bihar',
+    capacity: '10 kW',
+    category: 'Residential',
+    completedDate: 'March 2024',
+    description: 'Complete rooftop solar installation for a luxury villa with net metering integration, reducing monthly electricity bills by over 85%. This system uses 540W Mono PERC panels with a Growatt grid-tied inverter and bi-directional net meter.',
+    panels: 19,
+    annualSavings: '₹1,32,000',
+    co2Offset: '12 Tonnes/Year',
+  },
+  {
+    id: 2,
+    image: install2,
+    title: 'Industrial Warehouse Array',
+    location: 'Patna, Bihar',
+    capacity: '250 kW',
+    category: 'Industrial',
+    completedDate: 'January 2024',
+    description: 'Large-scale industrial rooftop solar farm powering a manufacturing unit with high-efficiency mono PERC panels and centralized string inverter system. The project was delivered in under 30 days with full DISCOM approval.',
+    panels: 475,
+    annualSavings: '₹33,00,000',
+    co2Offset: '300 Tonnes/Year',
+  },
+  {
+    id: 3,
+    image: install3,
+    title: 'Smart Inverter Infrastructure',
+    location: 'Muzaffarpur, Bihar',
+    capacity: '15 kW',
+    category: 'Commercial',
+    completedDate: 'April 2024',
+    description: 'Professional-grade inverter and electrical infrastructure setup for a multi-story commercial building with real-time cloud monitoring. Includes ACDB/DCDB protection boxes and IP65 safety enclosures.',
+    panels: 28,
+    annualSavings: '₹1,98,000',
+    co2Offset: '18 Tonnes/Year',
+  },
+  {
+    id: 4,
+    image: install5,
+    title: 'Township Housing Project',
+    location: 'Patna, Bihar',
+    capacity: '200 kW',
+    category: 'Residential',
+    completedDate: 'December 2023',
+    description: 'Rooftop solar across an entire residential township, providing shared solar power to over 100 households through community net metering. Each household saves an average of ₹2,200 per month on electricity.',
+    panels: 380,
+    annualSavings: '₹26,40,000',
+    co2Offset: '240 Tonnes/Year',
+  },
+  {
+    id: 5,
+    image: install6,
+    title: 'Solar Array Farm',
+    location: 'Patna, Bihar',
+    capacity: '500 kW',
+    category: 'Industrial',
+    completedDate: 'November 2023',
+    description: 'Utility-scale solar farm with bifacial modules and advanced tracking systems, feeding power directly to the state grid. This project offsets over 600 tonnes of CO₂ emissions annually.',
+    panels: 950,
+    annualSavings: '₹66,00,000',
+    co2Offset: '600 Tonnes/Year',
+  },
+  {
+    id: 6,
+    image: install7,
+    title: 'Suburban Home Setup',
+    location: 'Patna, Bihar',
+    capacity: '8 kW',
+    category: 'Residential',
+    completedDate: 'May 2024',
+    description: 'Premium residential rooftop installation with all-black aesthetic panels and seamless net metering for a modern suburban home. Includes 25-year panel warranty and 10-year inverter warranty.',
+    panels: 15,
+    annualSavings: '₹1,05,600',
+    co2Offset: '9.6 Tonnes/Year',
+  },
+  {
+    id: 7,
+    image: solar4,
+    title: 'Hospital Solar Power System',
+    location: 'Patna, Bihar',
+    capacity: '75 kW',
+    category: 'Commercial',
+    completedDate: 'June 2024',
+    description: 'Hybrid solar system for a 200-bed private hospital, ensuring uninterrupted power supply with battery backup during grid outages. Critical medical equipment stays powered 24/7.',
+    panels: 140,
+    annualSavings: '₹9,90,000',
+    co2Offset: '90 Tonnes/Year',
+  },
+  {
+    id: 8,
+    image: solar6,
+    title: 'School Campus Solar',
+    location: 'Patna, Bihar',
+    capacity: '25 kW',
+    category: 'Commercial',
+    completedDate: 'July 2024',
+    description: 'Eco-friendly solar installation across a school campus powering classrooms, computer labs, and administrative blocks. The school now operates with nearly zero electricity bills.',
+    panels: 47,
+    annualSavings: '₹3,30,000',
+    co2Offset: '30 Tonnes/Year',
+  },
+  {
+    id: 9,
+    image: solar7,
+    title: 'Cold Storage Solar Farm',
+    location: 'Patna, Bihar',
+    capacity: '120 kW',
+    category: 'Industrial',
+    completedDate: 'August 2024',
+    description: 'High-capacity solar installation for an agricultural cold storage facility, significantly reducing operational costs. The system handles heavy compressor loads during peak summer months.',
+    panels: 228,
+    annualSavings: '₹15,84,000',
+    co2Offset: '144 Tonnes/Year',
+  },
+]
+
+export const statsData = [
+  { value: '500+', label: 'Projects Completed', icon: 'projects' },
+  { value: '12 MW', label: 'Total Capacity Installed', icon: 'capacity' },
+  { value: '98%', label: 'Client Satisfaction', icon: 'satisfaction' },
+  { value: '15+', label: 'Cities Covered', icon: 'cities' },
+]
