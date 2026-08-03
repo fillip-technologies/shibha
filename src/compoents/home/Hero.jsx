@@ -48,7 +48,8 @@ function Hero() {
 
         <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-slate-50 sm:text-lg md:text-xl">
 
-          Welcome to Shibha Enterprises, the best solar company in Patna, where creativity meets credibility. We prioritise designing and delivering personalised solar power services from rooftop installations to commercial solar farms, helping you minimize electricity costs, enhance energy efficiency, and adapt to a sustainable future.
+          Welcome to Shibha Enterprises, the leading solar company in Patna, providing customized solar solutions for homes and businesses.
+          Reduce electricity costs, improve energy efficiency, and embrace a sustainable future.
 
         </p>
 

@@ -111,37 +111,38 @@ const faqsList = [
   },
   {
     q: 'What are the benefits of choosing Hybrid Solar Installation Services in Patna?',
-    a: 'Our Hybrid Solar Installation Services in Patna help reduce electricity bills, provide uninterrupted backup during outages, maximize solar energy utilization, and ensure long-term energy independence with intelligent power management.'  },
+    a: 'Our Hybrid Solar Installation Services in Patna help reduce electricity bills, provide uninterrupted backup during outages, maximize solar energy utilization, and ensure long-term energy independence with intelligent power management.'
+  },
   {
     q: 'Does a Hybrid Solar System work during power cuts?',
     a: 'Yes. One of the biggest advantages of Hybrid Solar Installation Services in Patna is uninterrupted electricity. The battery backup instantly powers your essential appliances whenever the utility grid fails.',
   },
-    {
+  {
     q: 'Is a Hybrid Solar System eligible for government subsidies?',
     a: 'Yes. Eligible residential rooftop hybrid solar systems can benefit from government subsidy schemes, including PM Surya Ghar Muft Bijli Yojana, subject to prevailing guidelines.',
   },
-    {
+  {
     q: 'Can I use net metering with a Hybrid Solar System?',
     a: 'Absolutely. Hybrid systems support net metering, allowing you to export surplus solar energy to the grid while storing additional electricity in batteries for future use.',
   },
 
-   {
+  {
     q: 'Who should choose Hybrid Solar Installation Services in Patna?',
     a: 'Our Hybrid Solar Installation Services in Patna are ideal for homes, offices, hospitals, schools, commercial buildings, hotels, and industries that require continuous power along with significant energy savings.',
   },
-    {
+  {
     q: ' Which battery technology do you use?',
     a: 'We install advanced lithium battery systems that offer faster charging, longer lifespan, higher efficiency, improved safety, and dependable backup performance for years.',
   },
-    {
+  {
     q: ' How long does it take to install a Hybrid Solar System?',
     a: 'Most residential hybrid solar installations are completed within a few days after the site survey and approvals. Larger commercial and industrial projects are completed according to project size and complexity.',
   },
-   {
+  {
     q: ' Why are your Hybrid Solar Installation Services in Patna trusted by customers?',
     a: 'Customers trust our Hybrid Solar Installation Services in Patna because we use Tier-1 solar components, intelligent energy management systems, certified installation practices, transparent pricing, and responsive after-sales support.',
   },
-   {
+  {
     q: 'How can I get a free quote for Hybrid Solar Installation Services in Patna?',
     a: 'Simply contact Shibha Enterprises to schedule a free consultation and site survey. Our experts will recommend the most efficient Hybrid Solar Installation Services in Patna based on your energy needs, property type, and budget.'
   },
@@ -222,7 +223,7 @@ function HybridSolar() {
               </h1>
 
               <p className="mt-6 text-sm sm:text-base leading-relaxed text-slate-300 max-w-xl">
-                Enjoy maximum utility savings with net metering while securing your home with automatic battery backup. Stay powered during outages with zero interruptions.
+                Revolutionize your energy consumption experience with our Hybrid Solar Installation Services in Patna. Benefit from net metering savings, battery backup, and consistent power- all combined in a single smart solar installation.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">

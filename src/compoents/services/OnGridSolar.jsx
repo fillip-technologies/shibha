@@ -113,11 +113,11 @@ const faqsList = [
     q: 'How does net metering work?',
     a: 'Net metering allows your solar system to export surplus electricity to the utility grid. The exported units are adjusted against your electricity consumption, helping reduce your monthly energy bills.',
   },
-    {
+  {
     q: 'Does an On-Grid Solar System require batteries?',
     a: 'No. On-grid systems operate without battery storage, making them more affordable, easier to maintain, and highly efficient for locations with a stable electricity supply.',
   },
-   {
+  {
     q: 'How much can I save with an On-Grid Solar System?',
     a: 'Savings depend on your electricity usage and system capacity. Most users experience substantial reductions in monthly electricity bills while enjoying excellent long-term returns.',
   },
@@ -125,15 +125,15 @@ const faqsList = [
     q: 'Is an On-Grid Solar System eligible for government subsidies?',
     a: 'Yes. Eligible residential rooftop solar systems can receive benefits under government subsidy schemes such as the PM Surya Ghar Muft Bijli Yojana, subject to applicable guidelines.',
   },
-    {
+  {
     q: 'How long does an On-Grid Solar installation take?',
     a: 'Most residential installations are completed within a few days after the site survey and approval process, while commercial projects may require additional time based on project size.',
   },
-   {
+  {
     q: 'Why should I choose Shibha Enterprises for On-Grid Solar installation?',
     a: 'As the Best On Grid Solar Company in Patna, we provide customized solar solutions, Tier-1 components, expert engineering, transparent pricing, and dedicated technical support from consultation to commissioning.',
   },
-   {
+  {
     q: 'What maintenance does an On-Grid Solar System require?',
     a: 'On-grid systems require minimal maintenance. Periodic cleaning of solar panels and routine inspections help maintain maximum energy generation and long-term efficiency.',
   },
@@ -218,7 +218,8 @@ function OnGridSolar() {
               </h1>
 
               <p className="mt-6 text-sm sm:text-base leading-relaxed text-slate-300 max-w-xl">
-                Connected directly to the utility grid. Generate clean energy, power your home loads first, and automatically export surplus units to earn billing credits through net metering.
+                Harness the power of solar energy and get uninterrupted savings through the best on-grid system with the best on grid solar company in Patna. Connected directly to the electricity grid,
+                it powers your home and provides excess power that you can sell in exchange for credits.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">

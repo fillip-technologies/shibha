@@ -121,7 +121,7 @@ const faqsList = [
     q: ' Can an Off-Grid Solar System eliminate electricity bills?',
     a: 'Yes. Since the system generates and stores its own electricity, users can enjoy energy independence without relying on utility power, subject to system sizing and energy usage.',
   },
-    {
+  {
     q: ' How long do Off-Grid Solar Systems last?',
     a: 'Our Tier-1 solar panels typically have a lifespan of over 25 years, while premium lithium batteries are designed for years of dependable performance with proper maintenance.',
   },
@@ -133,7 +133,7 @@ const faqsList = [
     q: 'Does Shibha Enterprises provide installation and maintenance services?',
     a: 'Yes. As the Best Off Grid Solar Company in Patna, we provide complete services, including consultation, system design, installation, commissioning, and ongoing maintenance support.',
   },
-   {
+  {
     q: ' Are Off-Grid Solar Systems suitable for businesses?',
     a: 'Absolutely. Off-grid systems are an excellent choice for industries, warehouses, telecom towers, agricultural operations, and commercial facilities that require uninterrupted power in remote locations.',
   },
@@ -218,8 +218,7 @@ function OffGridSolar() {
               </h1>
 
               <p className="mt-6 text-sm sm:text-base leading-relaxed text-slate-300 max-w-xl">
-                Say goodbye to the hassles of grid-based systems with smart off-grid solar solutions by the best off grid solar company in Patna. With our advanced high-capacity lithium battery storage, we provide uninterrupted generation, storage, and distribution of clean energy around the clock.
-              </p>
+                Say goodbye to the hassles of grid-based systems with smart off-grid solar solutions by the best off grid solar company in Patna. We provide uninterrupted generation, storage, and distribution of clean energy 24/7.               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
