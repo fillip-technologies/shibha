@@ -53,7 +53,7 @@ function SmartSolar() {
               </span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-slate-600 sm:text-lg">
-              Shibha Solar delivers state-of-the-art solar solutions designed to meet the energy demands of modern households and forward-thinking businesses.
+              Shiba Solar, the best solar panel installation in Patna, merges innovation with precision to provide smart solar solutions, maximising efficiency, minimizing energy costs, and building a sustainable future for homes, businesses, and industries.
             </p>
 
             <div className="mt-8 space-y-4">
@@ -65,7 +65,9 @@ function SmartSolar() {
                 </div>
                 <div>
                   <h4 className="text-base font-bold text-slate-900">Advanced Solar Panel Design</h4>
-                  <p className="mt-1 text-sm text-slate-500">High conversion efficiency to extract maximum power from solar rays, even during low-light conditions.</p>
+                  <p className="mt-1 text-sm text-slate-500">
+                    Being the best solar company in Patna, we design our solar technology for optimal sunlight collection and reliability in any weather condition.
+                  </p>
                 </div>
               </div>
 
@@ -77,7 +79,8 @@ function SmartSolar() {
                 </div>
                 <div>
                   <h4 className="text-base font-bold text-slate-900">Seamless Grid Integration</h4>
-                  <p className="mt-1 text-sm text-slate-500">Smooth net metering transition to sell surplus power back to the grid and earn credits on your bills.</p>
+                  <p className="mt-1 text-sm text-slate-500">With the best solar company in Patna, experience uninterrupted connection to the grid with easy net metering, which allows you to harness more solar energy and save big in the long run.
+                  </p>
                 </div>
               </div>
 
@@ -89,7 +92,8 @@ function SmartSolar() {
                 </div>
                 <div>
                   <h4 className="text-base font-bold text-slate-900">Eco-Friendly & Sustainable</h4>
-                  <p className="mt-1 text-sm text-slate-500">Reduce dependency on fossil fuels, shrink your carbon footprint, and support a greener tomorrow.</p>
+                  <p className="mt-1 text-sm text-slate-500">As the best solar company in Patna, we help you go green and reduce your carbon footprint through sustainable solar technology that saves on your electricity bills too.
+                  </p>
                 </div>
               </div>
             </div>

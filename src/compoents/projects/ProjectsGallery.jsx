@@ -54,7 +54,7 @@ function ProjectsGallery() {
               </span>
             </h2>
             <p className="mt-4 text-base leading-relaxed text-slate-500 sm:text-lg">
-              Every project showcases our commitment to quality, precision, and long-term performance.
+              Being the Best Rooftop Solar Company in Patna, all projects executed by Shibha Enterprises are an embodiment of our dedication towards engineering, accurate installation, and lasting efficiency. Discover our successful solar projects that have been providing clean energy solutions for residential, commercial, and industrial purposes.
             </p>
           </div>
 

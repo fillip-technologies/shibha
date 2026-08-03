@@ -10,6 +10,7 @@ import EcologyInvestment from './EcologyInvestment'
 import Projects from './Projects'
 import PMSuryaGhar from './PMSuryaGhar'
 import Testimonials from './Testimonials'
+import HomeFaq from './HomeFaq'
 import CtaBanner from './CtaBanner'
 
 function HomePage() {
@@ -18,7 +19,7 @@ function HomePage() {
       <Hero />
       <Stats />
       <Partnership />
-      <Products />
+      {/* <Products /> */}
       {/* <Services />
       <WhyChooseUs /> */}
       <SmartSolar />
@@ -27,6 +28,7 @@ function HomePage() {
       <Projects />
       <PMSuryaGhar />
       <Testimonials />
+      <HomeFaq />
       <CtaBanner />
     </>
   )

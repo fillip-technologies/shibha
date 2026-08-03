@@ -94,24 +94,52 @@ const processSteps = [
 
 const faqsList = [
   {
-    q: 'How long do solar batteries last in an off-grid system?',
-    a: 'Lithium Iron Phosphate (LiFePO4) batteries last 10 to 12 years (3,000 to 5,000 cycles) and require absolutely zero maintenance. Traditional tubular lead-acid batteries last about 4 to 5 years and require regular distilled water top-ups.',
+    q: 'Why is Shibha Enterprises the Best Off Grid Solar Company in Patna?',
+    a: 'Shibha Enterprises is recognized as the Best Off Grid Solar Company in Patna for delivering reliable off-grid solar systems, premium lithium battery solutions, expert installation, and dependable after-sales support.',
   },
   {
-    q: 'Can an off-grid solar system run air conditioners?',
-    a: 'Yes. A 5kW off-grid system with a robust Lithium battery bank can easily run a 1.5-ton 5-star inverter air conditioner along with standard home appliances during the day or for a designated period at night.',
+    q: 'What is an Off-Grid Solar System?',
+    a: 'An Off-Grid Solar System operates independently of the electricity grid. It generates power through solar panels, stores energy in batteries, and supplies electricity whenever you need it.',
   },
   {
-    q: 'What happens in an off-grid system if it is cloudy for 3 days in a row?',
-    a: 'Off-grid systems are designed with 1.5 to 2 days of "autonomy" (battery backup reserve). If the solar panels generate very little power due to heavy cloud cover or rain for multiple consecutive days, the system can draw backup power from an emergency generator or utility power line (if connected as a grid-backup).',
+    q: 'Who should install an Off-Grid Solar System?',
+    a: 'Off-grid solar is ideal for rural homes, farmhouses, remote locations, resorts, construction sites, and areas with limited or unreliable grid connectivity.',
   },
   {
-    q: 'Is government subsidy available for off-grid solar systems?',
-    a: 'Under the national PM Surya Ghar Yojana, subsidies are only offered for grid-connected (On-Grid and Hybrid) systems with net metering. Off-grid standalone systems are generally not eligible for Central government subsidies since they do not export power back to the public utility grid.',
+    q: 'What are the benefits of choosing the Best Off Grid Solar Company in Patna?',
+    a: 'Choosing the Best Off Grid Solar Company in Patna ensures professionally designed systems, premium components, reliable battery backup, maximum efficiency, and long-lasting performance.',
   },
   {
-    q: 'Can I charge an electric vehicle (EV) on an off-grid system?',
-    a: 'Yes, but it requires a larger system size (typically 8kW to 10kW) with a substantial Lithium battery capacity to supply the high current drawn by EV chargers without draining the household reserves.',
+    q: 'Does an Off-Grid Solar System work during power cuts?',
+    a: 'Yes. Since it is completely independent of the utility grid, an Off-Grid Solar System continues to supply electricity even during extended power outages.',
+  },
+  {
+    q: ' What type of batteries are used in your Off-Grid Solar Systems?',
+    a: 'We use advanced lithium battery technology that offers faster charging, longer lifespan, higher efficiency, and minimal maintenance compared to conventional batteries.',
+  },
+  {
+    q: ' Can an Off-Grid Solar System eliminate electricity bills?',
+    a: 'Yes. Since the system generates and stores its own electricity, users can enjoy energy independence without relying on utility power, subject to system sizing and energy usage.',
+  },
+    {
+    q: ' How long do Off-Grid Solar Systems last?',
+    a: 'Our Tier-1 solar panels typically have a lifespan of over 25 years, while premium lithium batteries are designed for years of dependable performance with proper maintenance.',
+  },
+  {
+    q: 'How do I choose the right Off-Grid Solar System capacity?',
+    a: 'Our experts perform a detailed energy assessment, considering your daily electricity consumption, appliance load, and future requirements to recommend the ideal system size.',
+  },
+  {
+    q: 'Does Shibha Enterprises provide installation and maintenance services?',
+    a: 'Yes. As the Best Off Grid Solar Company in Patna, we provide complete services, including consultation, system design, installation, commissioning, and ongoing maintenance support.',
+  },
+   {
+    q: ' Are Off-Grid Solar Systems suitable for businesses?',
+    a: 'Absolutely. Off-grid systems are an excellent choice for industries, warehouses, telecom towers, agricultural operations, and commercial facilities that require uninterrupted power in remote locations.',
+  },
+  {
+    q: ' How can I get a free consultation for an Off-Grid Solar System?',
+    a: 'Contact Shibha Enterprises today to book a free site survey and consultation. Our solar experts will recommend a customized Off-Grid Solar solution based on your energy requirements and budget.',
   },
 ]
 
@@ -125,16 +153,16 @@ function OffGridSolar() {
 
   return (
     <div className="bg-slate-50 min-h-screen text-slate-800">
-      
+
       {/* ── Hero Banner ──────────────────────────────── */}
       <section className="relative overflow-hidden bg-slate-950 pt-32 pb-24 text-white">
-        
+
         {/* Tech Grid Pattern */}
-        <div 
-          className="absolute inset-0 bg-[linear-gradient(to_right,#022c22_1px,transparent_1px),linear-gradient(to_bottom,#022c22_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-35" 
+        <div
+          className="absolute inset-0 bg-[linear-gradient(to_right,#022c22_1px,transparent_1px),linear-gradient(to_bottom,#022c22_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-35"
           style={{ maskImage: 'radial-gradient(ellipse 60% 50% at 50% 0%, #000 70%, transparent 100%)', WebkitMaskImage: 'radial-gradient(ellipse 60% 50% at 50% 0%, #000 70%, transparent 100%)' }}
         />
-        
+
         <div className="absolute inset-0 -z-10 opacity-15">
           <img
             src={solar5}
@@ -142,16 +170,16 @@ function OffGridSolar() {
             className="h-full w-full object-cover"
           />
         </div>
-        
+
         <div className="absolute inset-0 -z-10 bg-gradient-to-br from-slate-950 via-slate-900/90 to-emerald-950/85" />
-        
+
         {/* Glow Spots */}
         <div className="absolute left-1/4 top-1/4 -z-0 h-96 w-96 rounded-full bg-emerald-500/10 blur-[130px]" aria-hidden="true" />
         <div className="absolute right-10 bottom-10 -z-0 h-96 w-96 rounded-full bg-teal-500/10 blur-[130px]" aria-hidden="true" />
 
         <div className="site-container relative z-10">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:items-center">
-            
+
             {/* Left Column: Text Content */}
             <div className="lg:col-span-7 flex flex-col justify-center">
               {/* Breadcrumb */}
@@ -190,7 +218,7 @@ function OffGridSolar() {
               </h1>
 
               <p className="mt-6 text-sm sm:text-base leading-relaxed text-slate-300 max-w-xl">
-                Operate 100% independent of the public utility grid. With custom-sized Lithium battery storage banks, generate, store, and consume your own solar electricity 24 hours a day, 365 days a year.
+                Say goodbye to the hassles of grid-based systems with smart off-grid solar solutions by the best off grid solar company in Patna. With our advanced high-capacity lithium battery storage, we provide uninterrupted generation, storage, and distribution of clean energy around the clock.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
@@ -215,7 +243,7 @@ function OffGridSolar() {
             {/* Right Column: Glassmorphism Battery Monitor Mockup */}
             <div className="lg:col-span-5 flex justify-center">
               <div className="w-full max-w-md rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md shadow-2xl shadow-emerald-950/50">
-                
+
                 {/* Header */}
                 <div className="flex items-center justify-between border-b border-white/10 pb-4">
                   <div className="flex items-center gap-2">
@@ -239,7 +267,7 @@ function OffGridSolar() {
                       <span className="text-xs text-emerald-400 font-semibold">Healthy</span>
                     </div>
                   </div>
-                  
+
                   {/* Visual battery icon layout */}
                   <div className="flex items-center border-2 border-emerald-500/60 rounded-lg p-1 w-20 h-10 relative">
                     <div className="bg-emerald-500 rounded h-full w-[88%]" />
@@ -291,14 +319,15 @@ function OffGridSolar() {
       <section className="py-24 bg-white overflow-hidden">
         <div className="site-container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            
+
             <div>
               <span className="section-label">Overview</span>
               <h2 className="mt-4 text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
                 Your Own Private Power Station
               </h2>
               <p className="mt-5 text-base leading-relaxed text-slate-500 sm:text-lg">
-                Off-Grid systems are completely decoupled from public utility companies. By storing solar energy harvested during peak daylight hours in high-capacity Lithium battery banks, you get uninterrupted electrical power at any time — without power cuts, tariff hikes, or grid outages.
+                As the Best Off Grid Solar Company in Patna, Shibha Enterprises provides sophisticated off-grid solar solutions with high-quality lithium battery storage to ensure uninterrupted power supply, day and night. Power your home without connecting it to the electricity grid.
+
               </p>
 
               <div className="mt-8 grid gap-6 sm:grid-cols-2">
@@ -309,8 +338,8 @@ function OffGridSolar() {
                     </svg>
                   </span>
                   <div>
-                    <h4 className="text-sm font-bold text-slate-900">100% Autonomous</h4>
-                    <p className="text-xs text-slate-500 mt-1">Complete security from regional power outages and blackout grids.</p>
+                    <h4 className="text-sm font-bold text-slate-900">100% Energy Independent</h4>
+                    <p className="text-xs text-slate-500 mt-1">Stay energy independent during blackouts and never depend on the power grid. </p>
                   </div>
                 </div>
 
@@ -321,8 +350,8 @@ function OffGridSolar() {
                     </svg>
                   </span>
                   <div>
-                    <h4 className="text-sm font-bold text-slate-900">Premium Lithium Storage</h4>
-                    <p className="text-xs text-slate-500 mt-1">Utilizes high-safety LFP battery cells with a lifetime warranty check.</p>
+                    <h4 className="text-sm font-bold text-slate-900">Innovative Lithium Battery Storage</h4>
+                    <p className="text-xs text-slate-500 mt-1">Innovative lithium-based batteries provide secure and powerful power backup. </p>
                   </div>
                 </div>
 
@@ -334,7 +363,9 @@ function OffGridSolar() {
                   </span>
                   <div>
                     <h4 className="text-sm font-bold text-slate-900">Zero Utility Bills</h4>
-                    <p className="text-xs text-slate-500 mt-1">Enjoy a lifetime of free power once the initial investment is complete.</p>
+                    <p className="text-xs text-slate-500 mt-1">
+                      Create your own energy and enjoy the benefits of substantial long-term savings.
+                    </p>
                   </div>
                 </div>
 
@@ -346,7 +377,9 @@ function OffGridSolar() {
                   </span>
                   <div>
                     <h4 className="text-sm font-bold text-slate-900">Go Off-Grid Anywhere</h4>
-                    <p className="text-xs text-slate-500 mt-1">Perfect for rural farmhouses, eco-resorts, and remote sites.</p>
+                    <p className="text-xs text-slate-500 mt-1">
+                      An ideal solution for farmhouses, resorts, rural places, industries, and remote areas.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -383,7 +416,7 @@ function OffGridSolar() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-            
+
             {/* Capacity Options */}
             <div className="lg:col-span-4 flex flex-col gap-3 justify-center">
               {Object.keys(systemEstimates).map((size) => (
@@ -391,11 +424,10 @@ function OffGridSolar() {
                   key={size}
                   type="button"
                   onClick={() => setSelectedSize(size)}
-                  className={`flex items-center justify-between p-5 rounded-xl border text-left transition-all ${
-                    selectedSize === size
-                      ? 'bg-emerald-600 border-emerald-600 text-white shadow-xl shadow-emerald-600/20 translate-x-1.5'
-                      : 'bg-white border-slate-200 text-slate-800 hover:border-emerald-300'
-                  }`}
+                  className={`flex items-center justify-between p-5 rounded-xl border text-left transition-all ${selectedSize === size
+                    ? 'bg-emerald-600 border-emerald-600 text-white shadow-xl shadow-emerald-600/20 translate-x-1.5'
+                    : 'bg-white border-slate-200 text-slate-800 hover:border-emerald-300'
+                    }`}
                 >
                   <div>
                     <span className="block text-lg font-bold">{size} Off-Grid Setup</span>
@@ -466,7 +498,7 @@ function OffGridSolar() {
                   Book Free Site Survey
                 </a>
               </div>
-              
+
               <span className="text-[10px] text-slate-400 block mt-3 text-center sm:text-left">
                 * Cost estimates include premium mono-crystalline solar panels, off-grid PCU inverter, and LiFePO4 Lithium battery rack cabinet configurations.
               </span>
@@ -485,14 +517,14 @@ function OffGridSolar() {
               Premium Hardware Components
             </h2>
             <p className="mt-3 text-base text-slate-500">
-              We select only high-reliability Tier-1 hardware engineered for independent standalone applications.
+              As the Best off grid solar company in Patna, Shibha Enterprises offers solar panels that belong to the Tier-1 category, ensuring continuous power in any conditions.
             </p>
           </div>
 
           <div className="grid gap-8 sm:grid-cols-2">
             {keyComponents.map((component, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="bg-white rounded-2xl p-6 border border-slate-200/60 shadow-sm transition-all hover:shadow-xl hover:border-emerald-200 group flex flex-col justify-between"
               >
                 <div>
@@ -508,7 +540,7 @@ function OffGridSolar() {
                     {component.desc}
                   </p>
                 </div>
-                
+
                 <ul className="mt-4 space-y-2 border-t border-slate-100 pt-4">
                   {component.features.map((feat, i) => (
                     <li key={i} className="flex items-center gap-2 text-xs text-slate-600">
@@ -540,8 +572,8 @@ function OffGridSolar() {
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {processSteps.map((step, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="bg-white rounded-xl p-6 border border-slate-200/60 shadow-sm relative group hover:border-emerald-500 transition-colors"
               >
                 <div className="absolute -top-4 -left-2 flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-600 text-sm font-extrabold text-white shadow-lg">
@@ -576,11 +608,10 @@ function OffGridSolar() {
             {faqsList.map((faq, index) => {
               const isOpen = openFaqIndex === index
               return (
-                <div 
-                  key={index} 
-                  className={`rounded-xl border transition-all duration-300 ${
-                    isOpen ? 'border-emerald-500 bg-emerald-50/10 shadow-md' : 'border-slate-200 bg-white hover:border-slate-300'
-                  }`}
+                <div
+                  key={index}
+                  className={`rounded-xl border transition-all duration-300 ${isOpen ? 'border-emerald-500 bg-emerald-50/10 shadow-md' : 'border-slate-200 bg-white hover:border-slate-300'
+                    }`}
                 >
                   <button
                     type="button"
@@ -588,19 +619,17 @@ function OffGridSolar() {
                     className="w-full flex items-center justify-between p-5 text-left font-bold text-slate-900 select-none cursor-pointer"
                   >
                     <span>{faq.q}</span>
-                    <span className={`h-6 w-6 rounded-full flex items-center justify-center transition-all ${
-                      isOpen ? 'bg-emerald-500 text-white rotate-180' : 'bg-slate-100 text-slate-500'
-                    }`}>
+                    <span className={`h-6 w-6 rounded-full flex items-center justify-center transition-all ${isOpen ? 'bg-emerald-500 text-white rotate-180' : 'bg-slate-100 text-slate-500'
+                      }`}>
                       <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                       </svg>
                     </span>
                   </button>
-                  
-                  <div 
-                    className={`overflow-hidden transition-all duration-300 ${
-                      isOpen ? 'max-h-60 border-t border-slate-200/60 opacity-100' : 'max-h-0 opacity-0'
-                    }`}
+
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-60 border-t border-slate-200/60 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
                   >
                     <p className="p-5 text-sm leading-relaxed text-slate-500">
                       {faq.a}

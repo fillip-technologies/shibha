@@ -99,11 +99,12 @@ function PMSuryaGhar() {
           </h2>
 
           <p className="mt-4 text-xl sm:text-2xl font-bold text-emerald-300">
-            Get Up to ₹78,000 Subsidy on Rooftop Solar
+            Unlock Up to ₹78,000 Subsidy With PM Surya Ghar Solar Installation in Patna
           </p>
 
           <p className="mt-4 max-w-2xl text-emerald-100/80 text-base sm:text-lg leading-relaxed">
-            Government scheme providing free electricity through rooftop solar panels. Calculate your savings instantly below and see how you can reduce your monthly power bills to zero.
+          Why spend your hard-earned money on expensive electricity bills when you can have your own source of energy? Utilise the PM Surya Ghar Muft Bijli Yojana scheme and avail of up to ₹78,000 subsidy from the government for rooftop solar panels. With a Surya Ghar Yojna Vendor in Patna, switch to solar and save your money. 
+
           </p>
 
           <div className="mt-8">

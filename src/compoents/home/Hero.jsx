@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import roofTopBg from '../../assets/logo/roof-top.jpg'
+import roofTopBg from '../../assets/logo/roof-top-2.png'
 import { useQuoteModal } from '../../context/QuoteModalContext'
 
 function Hero() {
@@ -24,7 +24,7 @@ function Hero() {
       />
 
       {/* Dark Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-900/70 to-emerald-950/60" />
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-950/50 via-slate-900/30 to-emerald-950/20" />
 
       {/* Animated Glow */}
       <div className="hero-glow" aria-hidden="true" />
@@ -46,10 +46,10 @@ function Hero() {
           </span>
         </h1>
 
-        <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg md:text-xl">
-          From rooftop installations to commercial solar farms, Shibha Solar delivers
-          expert design, seamless installation, and lifelong maintenance saving you
-          money while saving the planet.
+        <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-slate-50 sm:text-lg md:text-xl">
+
+          Welcome to Shibha Enterprises, the best solar company in Patna, where creativity meets credibility. We prioritise designing and delivering personalised solar power services from rooftop installations to commercial solar farms, helping you minimize electricity costs, enhance energy efficiency, and adapt to a sustainable future.
+
         </p>
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">

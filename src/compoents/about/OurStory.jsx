@@ -99,14 +99,12 @@ function OurStory() {
 
             <div className="mt-6 space-y-4">
               <p className="text-base leading-relaxed text-slate-500 sm:text-lg">
-                Founded with a vision to make clean energy accessible to every Indian household, Shibha Enterprises
-                began its journey in the heart of India's solar boom. What started as a small team of passionate
-                engineers has grown into one of the most trusted solar energy companies in North India.
+                At Shibha Enterprises, the best solar panel installation in Bihar, our journey started from a vision to revolutionize the energy consumption process in India. Today, it gives us great pleasure to have established ourselves as a brand providing impactful solar solutions.
+
               </p>
               <p className="text-base leading-relaxed text-slate-500">
-                Over the past 15 years, we have installed thousands of solar systems across residential, commercial,
-                and industrial segments — earning the trust of 500+ customers with our commitment to quality
-                and innovation.
+                With over 15 years, 500+ installation projects completed, and 12+ MW of renewable energy deployed to date, Shibha Enterprises is characterized by its commitment to quality and innovation. As the best solar contractor in Patna, we continue to pursue the same goal: smart energy solutions to benefit people for years to come.
+
               </p>
             </div>
 

@@ -74,8 +74,7 @@ function ContactHero() {
             </h1>
 
             <p className="mt-6 mx-auto max-w-xl text-base leading-relaxed text-slate-300/90 sm:text-lg">
-              Have questions about solar energy? Need a free quote? Our expert team is ready to
-              help you make the switch to clean, affordable solar power.
+              Have questions about solar energy? Need a free quote? Being an experienced Solar Contractor in Patna, we offer consultations, tailored solar energy solutions, and installation services to help you save money and become energy independent.
             </p>
 
             {/* Quick contact chips */}

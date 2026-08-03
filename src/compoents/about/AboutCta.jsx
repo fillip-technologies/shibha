@@ -63,8 +63,8 @@ function AboutCta() {
           </span>
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-emerald-100/80 sm:text-lg">
-          Join hundreds of satisfied customers who trust us to power their future. Let's discuss how
-          solar energy can transform your home or business.
+          Thousands of satisfied customers have chosen Shibha Enterprises as the best solar company in Bihar for its unmatched quality. Be a part of the revolution and have a more sustainable future.
+
         </p>
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">

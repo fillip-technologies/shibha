@@ -33,9 +33,8 @@ function CtaBanner() {
       <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/95 via-emerald-800/90 to-teal-900/85" />
 
       <div
-        className={`site-container relative z-10 flex flex-col items-center py-24 text-center transition-all duration-1000 ease-out ${
-          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-        }`}
+        className={`site-container relative z-10 flex flex-col items-center py-24 text-center transition-all duration-1000 ease-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+          }`}
       >
         <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 text-emerald-300 backdrop-blur-sm">
           <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -50,8 +49,7 @@ function CtaBanner() {
           </span>
         </h2>
         <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-emerald-100/80 sm:text-lg">
-          Get a free, no-obligation quote today. Our experts will design the perfect solar
-          system for your home or business.
+          Let’s Build A Brighter, More Energy-Efficient Future Together. Our solar experts will analyze your needs and offer you the perfect solution with an obligation-free quotation.
         </p>
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">

@@ -5,6 +5,7 @@ import WorkingProcess from './WorkingProcess'
 import MissionVisionValues from './MissionVisionValues'
 import TeamSection from './TeamSection'
 import Certifications from './Certifications'
+import AboutFaq from './AboutFaq'
 import AboutCta from './AboutCta'
 
 function AboutPage() {
@@ -20,6 +21,7 @@ function AboutPage() {
       <MissionVisionValues />
       <TeamSection />
       <Certifications />
+      <AboutFaq />
       <AboutCta />
     </>
   )

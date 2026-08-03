@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import ProjectsHero from './ProjectsHero'
 import ProjectsStats from './ProjectsStats'
 import ProjectsGallery from './ProjectsGallery'
+import ProjectsFaq from './ProjectsFaq'
 import ProjectsCta from './ProjectsCta'
 
 function ProjectsPage() {
@@ -14,6 +15,7 @@ function ProjectsPage() {
       <ProjectsHero />
       <ProjectsStats />
       <ProjectsGallery />
+      <ProjectsFaq />
       <ProjectsCta />
     </>
   )

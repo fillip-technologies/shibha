@@ -94,24 +94,52 @@ const syncSteps = [
 
 const faqsList = [
   {
-    q: 'Does an on-grid solar system work during power cuts?',
-    a: 'No, on-grid systems shut down automatically during power cuts for safety reasons (anti-islanding). This prevents solar power from flowing back into lines under maintenance, protecting DISCOM utility workers.',
+    q: 'Why is Shibha Enterprises regarded as the Best On Grid Solar Company in Patna?',
+    a: 'Shibha Enterprises is trusted as the Best On Grid Solar Company in Patna for delivering premium-quality solar systems, expert installation, seamless net metering support, and reliable after-sales service for homes and businesses.',
   },
   {
-    q: 'What is net metering and how does it benefit me?',
-    a: 'Net metering is a billing mechanism that credits you for the solar energy you export back to the grid. If you generate more than you consume, the surplus units are credited to your bill, which reduces future grid power bills.',
+    q: 'What is an On-Grid Solar System?',
+    a: 'An On-Grid Solar System is connected to the utility grid, allowing you to use solar energy during the day and export excess electricity through net metering to reduce your electricity bills.',
   },
   {
-    q: 'How much space is required for a 3kW or 5kW on-grid system?',
-    a: 'A 1 kW solar system requires roughly 80 to 100 sq. ft. of shadow-free rooftop space. Therefore, a 3 kW system requires about 250-300 sq. ft., and a 5 kW system needs about 450-500 sq. ft.',
+    q: 'Who should choose an On-Grid Solar System?',
+    a: 'On-grid solar is ideal for homeowners, offices, commercial buildings, schools, hospitals, and industries with a reliable grid connection looking to maximize savings without battery storage.',
   },
   {
-    q: 'How much subsidy can I get under the PM Surya Ghar Scheme?',
-    a: 'Under the PM Surya Ghar Yojana, residential consumers get a subsidy of ₹30,000 for a 1 kW system, ₹60,000 for a 2 kW system, and a maximum cap of ₹78,000 for systems that are 3 kW or higher.',
+    q: 'What are the benefits of choosing the Best On Grid Solar Company in Patna, Bihar?',
+    a: 'Choosing the Best On Grid Solar Company in Patna ensures professional system design, premium components, certified installation, higher energy efficiency, and long-term performance.',
   },
   {
-    q: 'What is the average lifespan of an on-grid system?',
-    a: 'Solar panels come with a 25-year linear performance warranty. Inverters typically have a lifespan of 10-15 years, usually backed by a 5 or 10-year warranty that can be extended.',
+    q: 'How does net metering work?',
+    a: 'Net metering allows your solar system to export surplus electricity to the utility grid. The exported units are adjusted against your electricity consumption, helping reduce your monthly energy bills.',
+  },
+    {
+    q: 'Does an On-Grid Solar System require batteries?',
+    a: 'No. On-grid systems operate without battery storage, making them more affordable, easier to maintain, and highly efficient for locations with a stable electricity supply.',
+  },
+   {
+    q: 'How much can I save with an On-Grid Solar System?',
+    a: 'Savings depend on your electricity usage and system capacity. Most users experience substantial reductions in monthly electricity bills while enjoying excellent long-term returns.',
+  },
+  {
+    q: 'Is an On-Grid Solar System eligible for government subsidies?',
+    a: 'Yes. Eligible residential rooftop solar systems can receive benefits under government subsidy schemes such as the PM Surya Ghar Muft Bijli Yojana, subject to applicable guidelines.',
+  },
+    {
+    q: 'How long does an On-Grid Solar installation take?',
+    a: 'Most residential installations are completed within a few days after the site survey and approval process, while commercial projects may require additional time based on project size.',
+  },
+   {
+    q: 'Why should I choose Shibha Enterprises for On-Grid Solar installation?',
+    a: 'As the Best On Grid Solar Company in Patna, we provide customized solar solutions, Tier-1 components, expert engineering, transparent pricing, and dedicated technical support from consultation to commissioning.',
+  },
+   {
+    q: 'What maintenance does an On-Grid Solar System require?',
+    a: 'On-grid systems require minimal maintenance. Periodic cleaning of solar panels and routine inspections help maintain maximum energy generation and long-term efficiency.',
+  },
+  {
+    q: 'How can I get a free consultation for an On Grid Solar System?',
+    a: 'Simply contact Shibha Enterprises to schedule a free site survey and consultation. Our experts will evaluate your energy needs and recommend the most efficient On-Grid Solar solution for your property.',
   },
 ]
 
@@ -305,10 +333,10 @@ function OnGridSolar() {
             <div>
               <span className="section-label">Overview</span>
               <h2 className="mt-4 text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
-                Maximum Savings, Zero Hassle
+                Maximum Savings. Minimal Maintenance.
               </h2>
               <p className="mt-5 text-base leading-relaxed text-slate-500 sm:text-lg">
-                On-Grid solar energy is the most popular choice for urban residential and commercial installations. Since it does not require battery storage banks, it has the lowest upfront cost, pays for itself the fastest, and has a service life exceeding 25 years.
+                Select an On Grid Solar System by the Best Net Metering Consultant in Patna and save on electricity bills, faster return on investment, and optimal performance. Tailored for residential as well as commercial needs, our advanced solar systems provide maximum efficiency.
               </p>
 
               <div className="mt-8 grid gap-6 sm:grid-cols-2">
@@ -319,8 +347,8 @@ function OnGridSolar() {
                     </svg>
                   </span>
                   <div>
-                    <h4 className="text-sm font-bold text-slate-900">Highest Subsidy Rates</h4>
-                    <p className="text-xs text-slate-500 mt-1">Eligible for up to ₹78,000 direct subsidy from Central Govt.</p>
+                    <h4 className="text-sm font-bold text-slate-900">Government Subsidies</h4>
+                    <p className="text-xs text-slate-500 mt-1">Get up to ₹78,000 on rooftop solar power plant subsidy programs.</p>
                   </div>
                 </div>
 
@@ -331,8 +359,8 @@ function OnGridSolar() {
                     </svg>
                   </span>
                   <div>
-                    <h4 className="text-sm font-bold text-slate-900">Fastest ROI Period</h4>
-                    <p className="text-xs text-slate-500 mt-1">System pays back for itself completely in just 3 to 4 years.</p>
+                    <h4 className="text-sm font-bold text-slate-900">Quick Return on Investment </h4>
+                    <p className="text-xs text-slate-500 mt-1">Return on investment in as little as 3-4 years and monthly savings.</p>
                   </div>
                 </div>
 
@@ -343,8 +371,8 @@ function OnGridSolar() {
                     </svg>
                   </span>
                   <div>
-                    <h4 className="text-sm font-bold text-slate-900">Virtually Zero Maintenance</h4>
-                    <p className="text-xs text-slate-500 mt-1">No batteries to replace or refill. Just clean panels once a week.</p>
+                    <h4 className="text-sm font-bold text-slate-900">Hassle-Free Maintenance </h4>
+                    <p className="text-xs text-slate-500 mt-1">Without any batteries and with easy maintenance, just clean panels once a week for high performance</p>
                   </div>
                 </div>
 
@@ -355,8 +383,10 @@ function OnGridSolar() {
                     </svg>
                   </span>
                   <div>
-                    <h4 className="text-sm font-bold text-slate-900">Unlimited Scalability</h4>
-                    <p className="text-xs text-slate-500 mt-1">Easy to scale and add more panels as power consumption grows.</p>
+                    <h4 className="text-sm font-bold text-slate-900">
+                      Smart Net Metering
+                    </h4>
+                    <p className="text-xs text-slate-500 mt-1">We offer seamless grid-tie functionality, enabling you to sell off excess energy and earn billing credits.</p>
                   </div>
                 </div>
               </div>
@@ -388,7 +418,7 @@ function OnGridSolar() {
               Interactive System Estimator
             </h2>
             <p className="mt-3 text-sm text-slate-500">
-              Select a system capacity below to calculate average costs, direct government subsidies, and payback estimates.
+              Being the best on grid solar company in Patna, we help you choose a system size from below to determine the average costs, government incentives, and payback time.
             </p>
           </div>
 
@@ -494,7 +524,7 @@ function OnGridSolar() {
               Premium Hardware Components
             </h2>
             <p className="mt-3 text-base text-slate-500">
-              We select only Tier-1 manufacturers with industry-leading performance warranties for on-grid applications.
+              Being the best on grid Solar company in Patna, Shibha Enterprises always uses high-quality solar panels, inverters, and other electrical parts from reputed suppliers. Each system is designed to ensure the highest level of efficiency, reliability, and durability.
             </p>
           </div>
 
@@ -543,7 +573,9 @@ function OnGridSolar() {
               How Synchronization Works
             </h2>
             <p className="mt-3 text-base text-slate-500">
-              A step-by-step view of how power generated from your roof flows into appliances or credits.
+
+              We are the best on grid solar company in Patna. We provide seamless integration with the grid and help in using your solar system to run your premises, with excess power being exported.
+
             </p>
           </div>
 

@@ -212,9 +212,7 @@ function EcologyInvestment() {
                 {/* Body text */}
                 <div className="mt-6 space-y-4">
                   <p className="text-[14px] leading-[1.85] text-slate-500 sm:text-[15px]">
-                    Shibha Solar is a leader in the energy-saving industry. Established
-                    with a vision to make clean energy accessible to every home and
-                    business.
+                   Here at Shibha Enterprises, the best solar contractor in Patna, we believe that harnessing the power of the sun is not just an option but the backbone of building a smarter, more sustainable future. 
                   </p>
                   <p className="text-[14px] leading-[1.85] text-slate-500 sm:text-[15px]">
                     Since inception, we have installed over{' '}

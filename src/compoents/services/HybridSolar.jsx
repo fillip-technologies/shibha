@@ -98,24 +98,52 @@ const processSteps = [
 
 const faqsList = [
   {
-    q: 'What is the main difference between Hybrid and Off-Grid solar?',
-    a: 'A hybrid system remains connected to the utility grid, allowing you to use net metering to export excess power and save on bills. It has a battery backup for power failures. An off-grid system is completely isolated from the grid, requiring a much larger battery bank to ensure power during consecutive cloudy days.',
+    q: 'Why should I choose Shibha Enterprises for Hybrid Solar Installation Services in Patna?',
+    a: 'Shibha Enterprises is a trusted provider of Hybrid Solar Installation Services in Patna, offering premium solar technology, advanced battery storage, expert installation, and dedicated after-sales support for residential, commercial, and industrial projects.',
   },
   {
-    q: 'How fast is the power backup changeover during a grid failure?',
-    a: 'The switching time is less than 10 milliseconds. This is extremely fast (matching standard online UPS specifications), meaning computers, Wi-Fi routers, televisions, and other sensitive appliances will not shut down or reboot.',
+    q: 'What are Hybrid Solar Installation Services in Patna?',
+    a: 'Hybrid Solar Installation Services in Patna include the design, supply, installation, and maintenance of hybrid solar systems that combine solar panels, lithium battery storage, and grid connectivity for uninterrupted and efficient power.',
   },
   {
-    q: 'Am I eligible for government subsidies on a hybrid solar system?',
-    a: 'Yes. Since hybrid systems are grid-connected with a bi-directional net meter, the solar panels and hybrid inverter component qualify for the central government PM Surya Ghar subsidy (up to ₹78,000). The cost of the batteries is borne entirely by the buyer.',
+    q: 'How does a Hybrid Solar System work?',
+    a: 'A Hybrid Solar System generates electricity through solar panels, stores excess energy in batteries, and exports surplus power to the utility grid through net metering. During power outages, the battery automatically supplies electricity without interruption.',
   },
   {
-    q: 'How long do the hybrid batteries last?',
-    a: 'Shibha Solar uses premium LiFePO4 Lithium batteries which come with a 5 to 10-year manufacturer warranty and last more than 10-12 years under normal daily operation (rated for over 3,000 charging cycles).',
-  },
+    q: 'What are the benefits of choosing Hybrid Solar Installation Services in Patna?',
+    a: 'Our Hybrid Solar Installation Services in Patna help reduce electricity bills, provide uninterrupted backup during outages, maximize solar energy utilization, and ensure long-term energy independence with intelligent power management.'  },
   {
-    q: 'Can I add more battery storage to my hybrid system later?',
-    a: 'Yes. Hybrid systems are modular. You can start with a basic battery bank (e.g. 4.8 kWh) to cover emergency lighting/critical loads and easily stack more battery units later as your energy requirements grow.',
+    q: 'Does a Hybrid Solar System work during power cuts?',
+    a: 'Yes. One of the biggest advantages of Hybrid Solar Installation Services in Patna is uninterrupted electricity. The battery backup instantly powers your essential appliances whenever the utility grid fails.',
+  },
+    {
+    q: 'Is a Hybrid Solar System eligible for government subsidies?',
+    a: 'Yes. Eligible residential rooftop hybrid solar systems can benefit from government subsidy schemes, including PM Surya Ghar Muft Bijli Yojana, subject to prevailing guidelines.',
+  },
+    {
+    q: 'Can I use net metering with a Hybrid Solar System?',
+    a: 'Absolutely. Hybrid systems support net metering, allowing you to export surplus solar energy to the grid while storing additional electricity in batteries for future use.',
+  },
+
+   {
+    q: 'Who should choose Hybrid Solar Installation Services in Patna?',
+    a: 'Our Hybrid Solar Installation Services in Patna are ideal for homes, offices, hospitals, schools, commercial buildings, hotels, and industries that require continuous power along with significant energy savings.',
+  },
+    {
+    q: ' Which battery technology do you use?',
+    a: 'We install advanced lithium battery systems that offer faster charging, longer lifespan, higher efficiency, improved safety, and dependable backup performance for years.',
+  },
+    {
+    q: ' How long does it take to install a Hybrid Solar System?',
+    a: 'Most residential hybrid solar installations are completed within a few days after the site survey and approvals. Larger commercial and industrial projects are completed according to project size and complexity.',
+  },
+   {
+    q: ' Why are your Hybrid Solar Installation Services in Patna trusted by customers?',
+    a: 'Customers trust our Hybrid Solar Installation Services in Patna because we use Tier-1 solar components, intelligent energy management systems, certified installation practices, transparent pricing, and responsive after-sales support.',
+  },
+   {
+    q: 'How can I get a free quote for Hybrid Solar Installation Services in Patna?',
+    a: 'Simply contact Shibha Enterprises to schedule a free consultation and site survey. Our experts will recommend the most efficient Hybrid Solar Installation Services in Patna based on your energy needs, property type, and budget.'
   },
 ]
 
@@ -129,16 +157,16 @@ function HybridSolar() {
 
   return (
     <div className="bg-slate-50 min-h-screen text-slate-800">
-      
+
       {/* ── Hero Banner ──────────────────────────────── */}
       <section className="relative overflow-hidden bg-slate-950 pt-32 pb-24 text-white">
-        
+
         {/* Tech Grid Pattern */}
-        <div 
-          className="absolute inset-0 bg-[linear-gradient(to_right,#022c22_1px,transparent_1px),linear-gradient(to_bottom,#022c22_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-35" 
+        <div
+          className="absolute inset-0 bg-[linear-gradient(to_right,#022c22_1px,transparent_1px),linear-gradient(to_bottom,#022c22_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-35"
           style={{ maskImage: 'radial-gradient(ellipse 60% 50% at 50% 0%, #000 70%, transparent 100%)', WebkitMaskImage: 'radial-gradient(ellipse 60% 50% at 50% 0%, #000 70%, transparent 100%)' }}
         />
-        
+
         <div className="absolute inset-0 -z-10 opacity-15">
           <img
             src={solar6}
@@ -146,16 +174,16 @@ function HybridSolar() {
             className="h-full w-full object-cover"
           />
         </div>
-        
+
         <div className="absolute inset-0 -z-10 bg-gradient-to-br from-slate-950 via-slate-900/90 to-emerald-950/85" />
-        
+
         {/* Glow Spots */}
         <div className="absolute left-1/4 top-1/4 -z-0 h-96 w-96 rounded-full bg-emerald-500/10 blur-[130px]" aria-hidden="true" />
         <div className="absolute right-10 bottom-10 -z-0 h-96 w-96 rounded-full bg-teal-500/10 blur-[130px]" aria-hidden="true" />
 
         <div className="site-container relative z-10">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:items-center">
-            
+
             {/* Left Column: Text & CTA */}
             <div className="lg:col-span-7 flex flex-col justify-center">
               {/* Breadcrumb */}
@@ -219,7 +247,7 @@ function HybridSolar() {
             {/* Right Column: Glassmorphism Hybrid Sync Dashboard */}
             <div className="lg:col-span-5 flex justify-center">
               <div className="w-full max-w-md rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md shadow-2xl shadow-emerald-950/50">
-                
+
                 {/* Header */}
                 <div className="flex items-center justify-between border-b border-white/10 pb-4">
                   <div className="flex items-center gap-2">
@@ -275,14 +303,14 @@ function HybridSolar() {
       <section className="py-24 bg-white overflow-hidden">
         <div className="site-container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            
+
             <div>
               <span className="section-label">Overview</span>
               <h2 className="mt-4 text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
                 Smartest Energy Security
               </h2>
               <p className="mt-5 text-base leading-relaxed text-slate-500 sm:text-lg">
-                Hybrid systems offer the absolute ultimate in flexibility. You keep the financial advantages of net metering (sending power back to grid for high bill deductions) while staying protected from grid failures, power fluctuations, and daily load shedding with smart Lithium batteries.
+                Get the best of energy independence and savings with our Hybrid Solar Installation Services in Patna. Utilize solar energy and store excess power in sophisticated lithium batteries, and switch on the grid at will to enjoy continuous power supply, reduced bills, and full peace of mind.
               </p>
 
               <div className="mt-8 grid gap-6 sm:grid-cols-2">
@@ -293,8 +321,8 @@ function HybridSolar() {
                     </svg>
                   </span>
                   <div>
-                    <h4 className="text-sm font-bold text-slate-900">Seamless Changeover</h4>
-                    <p className="text-xs text-slate-500 mt-1">Automatic switching takes less than 10ms. Computers stay online.</p>
+                    <h4 className="text-sm font-bold text-slate-900">Immediate Power Back-Up</h4>
+                    <p className="text-xs text-slate-500 mt-1">Automatic switching within milliseconds helps you maintain the operation of your appliances continuously without any interruption.</p>
                   </div>
                 </div>
 
@@ -305,8 +333,9 @@ function HybridSolar() {
                     </svg>
                   </span>
                   <div>
-                    <h4 className="text-sm font-bold text-slate-900">Max Savings & Billing</h4>
-                    <p className="text-xs text-slate-500 mt-1">Export surplus power during peak generation to lower your bill.</p>
+                    <h4 className="text-sm font-bold text-slate-900">Saving Money by Net Metering
+                    </h4>
+                    <p className="text-xs text-slate-500 mt-1">Sell excess solar power back to the grid to save money on your monthly electricity bill.</p>
                   </div>
                 </div>
 
@@ -318,7 +347,10 @@ function HybridSolar() {
                   </span>
                   <div>
                     <h4 className="text-sm font-bold text-slate-900">PM Surya Ghar Subsidy</h4>
-                    <p className="text-xs text-slate-500 mt-1">Fully eligible for central rooftop subsidies up to ₹78,000.</p>
+                    <p className="text-xs text-slate-500 mt-1">
+                      Benefit from the PM Surya Ghar rooftop solar subsidy program and get up to ₹78,000 in subsidies.
+
+                    </p>
                   </div>
                 </div>
 
@@ -329,8 +361,10 @@ function HybridSolar() {
                     </svg>
                   </span>
                   <div>
-                    <h4 className="text-sm font-bold text-slate-900">Intelligent Controls</h4>
-                    <p className="text-xs text-slate-500 mt-1">Prioritize solar, battery, or grid to minimize electricity consumption.</p>
+                    <h4 className="text-sm font-bold text-slate-900">
+                      Smart Management of Energy
+                    </h4>
+                    <p className="text-xs text-slate-500 mt-1">Smart controllers help you make the most of your solar power, battery, and grid electricity.</p>
                   </div>
                 </div>
               </div>
@@ -367,7 +401,7 @@ function HybridSolar() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-            
+
             {/* Options */}
             <div className="lg:col-span-4 flex flex-col gap-3 justify-center">
               {Object.keys(systemEstimates).map((size) => (
@@ -375,11 +409,10 @@ function HybridSolar() {
                   key={size}
                   type="button"
                   onClick={() => setSelectedSize(size)}
-                  className={`flex items-center justify-between p-5 rounded-xl border text-left transition-all ${
-                    selectedSize === size
-                      ? 'bg-emerald-600 border-emerald-600 text-white shadow-xl shadow-emerald-600/20 translate-x-1.5'
-                      : 'bg-white border-slate-200 text-slate-800 hover:border-emerald-300'
-                  }`}
+                  className={`flex items-center justify-between p-5 rounded-xl border text-left transition-all ${selectedSize === size
+                    ? 'bg-emerald-600 border-emerald-600 text-white shadow-xl shadow-emerald-600/20 translate-x-1.5'
+                    : 'bg-white border-slate-200 text-slate-800 hover:border-emerald-300'
+                    }`}
                 >
                   <div>
                     <span className="block text-lg font-bold">{size} Hybrid Setup</span>
@@ -450,7 +483,7 @@ function HybridSolar() {
                   Book Free Site Survey
                 </a>
               </div>
-              
+
               <span className="text-[10px] text-slate-400 block mt-3 text-center sm:text-left">
                 * System costs include premium Tier-1 mono solar panels, hybrid sync inverter, LiFePO4 battery pack, structures, and bidirectional net-meter setup fees.
               </span>
@@ -469,14 +502,14 @@ function HybridSolar() {
               Premium Hardware Components
             </h2>
             <p className="mt-3 text-base text-slate-500">
-              We select only high-reliability Tier-1 hardware engineered for independent standalone applications.
+              For all our Commercial Solar Installation in Patna and Industrial Solar Solutions in Patna, Shibha Enterprises exclusively utilizes Tier-1 solar panels, efficient inverters, and superior quality electrical equipment. We design each solution to ensure optimum energy production, unparalleled reliability, and superior performance.
             </p>
           </div>
 
           <div className="grid gap-8 sm:grid-cols-2">
             {keyComponents.map((component, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="bg-white rounded-2xl p-6 border border-slate-200/60 shadow-sm transition-all hover:shadow-xl hover:border-emerald-200 group flex flex-col justify-between"
               >
                 <div>
@@ -492,7 +525,7 @@ function HybridSolar() {
                     {component.desc}
                   </p>
                 </div>
-                
+
                 <ul className="mt-4 space-y-2 border-t border-slate-100 pt-4">
                   {component.features.map((feat, i) => (
                     <li key={i} className="flex items-center gap-2 text-xs text-slate-600">
@@ -518,14 +551,15 @@ function HybridSolar() {
               How Hybrid Energy Flows
             </h2>
             <p className="mt-3 text-base text-slate-500">
-              A detailed view of how hybrid solar balances panels, storage batteries, and utility grid connections.
+              Benefit from the efficiencies offered by our Hybrid Solar Installation Services in Patna, where solar panels, battery storage, and the electricity grid all come together in perfect harmony. You'll experience uninterrupted electricity, efficient use of energy, and substantial savings.
+
             </p>
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {processSteps.map((step, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="bg-white rounded-xl p-6 border border-slate-200/60 shadow-sm relative group hover:border-emerald-500 transition-colors"
               >
                 <div className="absolute -top-4 -left-2 flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-600 text-sm font-extrabold text-white shadow-lg">
@@ -560,11 +594,10 @@ function HybridSolar() {
             {faqsList.map((faq, index) => {
               const isOpen = openFaqIndex === index
               return (
-                <div 
-                  key={index} 
-                  className={`rounded-xl border transition-all duration-300 ${
-                    isOpen ? 'border-emerald-500 bg-emerald-50/10 shadow-md' : 'border-slate-200 bg-white hover:border-slate-300'
-                  }`}
+                <div
+                  key={index}
+                  className={`rounded-xl border transition-all duration-300 ${isOpen ? 'border-emerald-500 bg-emerald-50/10 shadow-md' : 'border-slate-200 bg-white hover:border-slate-300'
+                    }`}
                 >
                   <button
                     type="button"
@@ -572,19 +605,17 @@ function HybridSolar() {
                     className="w-full flex items-center justify-between p-5 text-left font-bold text-slate-900 select-none cursor-pointer"
                   >
                     <span>{faq.q}</span>
-                    <span className={`h-6 w-6 rounded-full flex items-center justify-center transition-all ${
-                      isOpen ? 'bg-emerald-500 text-white rotate-180' : 'bg-slate-100 text-slate-500'
-                    }`}>
+                    <span className={`h-6 w-6 rounded-full flex items-center justify-center transition-all ${isOpen ? 'bg-emerald-500 text-white rotate-180' : 'bg-slate-100 text-slate-500'
+                      }`}>
                       <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                       </svg>
                     </span>
                   </button>
-                  
-                  <div 
-                    className={`overflow-hidden transition-all duration-300 ${
-                      isOpen ? 'max-h-60 border-t border-slate-200/60 opacity-100' : 'max-h-0 opacity-0'
-                    }`}
+
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-60 border-t border-slate-200/60 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
                   >
                     <p className="p-5 text-sm leading-relaxed text-slate-500">
                       {faq.a}
