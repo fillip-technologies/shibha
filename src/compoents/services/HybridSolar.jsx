@@ -629,14 +629,9 @@ function HybridSolar() {
       </section>
 
       {/* ── CTA Banner ──────────────────────────────── */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-emerald-900 to-emerald-950 py-20 text-center text-white">
+      <section className="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-emerald-900 to-emerald-950 py-14 sm:py-16 text-center text-white">
         <div className="absolute right-0 top-0 h-80 w-80 rounded-full bg-emerald-400/10 blur-[100px]" aria-hidden="true" />
         <div className="site-container relative z-10 flex flex-col items-center">
-          <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 text-emerald-300 backdrop-blur-sm">
-            <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-            </svg>
-          </div>
           <h2 className="max-w-3xl text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white">
             Ready to Go Hybrid?
           </h2>

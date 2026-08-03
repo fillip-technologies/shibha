@@ -22,7 +22,7 @@ function ProjectsCta() {
   }, [])
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-emerald-900 to-teal-950 py-24" ref={ref}>
+    <section className="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-emerald-900 to-teal-950 py-14 sm:py-16" ref={ref}>
       {/* Decorative elements */}
       <div className="absolute left-0 top-0 h-80 w-80 rounded-full bg-emerald-400/8 blur-[120px]" aria-hidden="true" />
       <div className="absolute right-0 bottom-0 h-96 w-96 rounded-full bg-teal-400/8 blur-[120px]" aria-hidden="true" />
@@ -43,12 +43,6 @@ function ProjectsCta() {
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
           }`}
         >
-          <div className="mx-auto mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 text-emerald-300 backdrop-blur-sm">
-            <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-            </svg>
-          </div>
-
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white">
             Ready to Start Your{' '}
             <span className="bg-gradient-to-r from-emerald-300 to-teal-200 bg-clip-text text-transparent">
