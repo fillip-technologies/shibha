@@ -18,8 +18,8 @@ function Hero() {
     >
       {/* Parallax Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-scroll lg:bg-fixed"
-        style={{ backgroundImage: `url(${roofTopBg})` }}
+        className="absolute inset-0 bg-cover bg-no-repeat bg-scroll lg:bg-fixed"
+        style={{ backgroundImage: `url(${roofTopBg})`, backgroundPosition: 'center 42%' }}
         aria-hidden="true"
       />
 
