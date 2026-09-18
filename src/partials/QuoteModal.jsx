@@ -72,14 +72,27 @@ function QuoteModal() {
     if (errors[name]) setErrors((prev) => ({ ...prev, [name]: '' }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     if (!validate()) return
     setIsSubmitting(true)
-    setTimeout(() => {
+    try {
+      const res = await fetch('/api/quotes', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...formData, source: 'Quote Modal' }),
+      })
+      const data = await res.json()
+      if (data.success) {
+        setIsSubmitted(true)
+      } else {
+        setErrors({ submit: data.message || 'Submission failed. Please try again.' })
+      }
+    } catch {
+      setErrors({ submit: 'Could not connect to server. Please try again later.' })
+    } finally {
       setIsSubmitting(false)
-      setIsSubmitted(true)
-    }, 1500)
+    }
   }
 
   return (
@@ -376,6 +389,13 @@ function QuoteModal() {
                     />
                   </div>
                 </div>
+
+                {/* Submit error */}
+                {errors.submit && (
+                  <p className="text-[11px] text-red-500 font-semibold flex items-center gap-1">
+                    ⚠️ {errors.submit}
+                  </p>
+                )}
 
                 {/* Submit button */}
                 <button

@@ -9,9 +9,15 @@ import OnGridSolar from './compoents/services/OnGridSolar'
 import OffGridSolar from './compoents/services/OffGridSolar'
 import HybridSolar from './compoents/services/HybridSolar'
 import { QuoteModalProvider } from './context/QuoteModalContext'
+import { AdminAuthProvider } from './context/AdminAuthContext'
 import QuoteModal from './partials/QuoteModal'
+import AdminLoginPage from './admin/AdminLoginPage'
+import AdminForgotPasswordPage from './admin/AdminForgotPasswordPage'
+import AdminResetPasswordPage from './admin/AdminResetPasswordPage'
+import AdminDashboard from './admin/AdminDashboard'
+import AdminProtectedRoute from './admin/AdminProtectedRoute'
 
-function App() {
+function PublicSite() {
   return (
     <QuoteModalProvider>
       <div className="app-shell">
@@ -31,6 +37,24 @@ function App() {
         <QuoteModal />
       </div>
     </QuoteModalProvider>
+  )
+}
+
+function App() {
+  return (
+    <AdminAuthProvider>
+      <Routes>
+        <Route path="/admin/login" element={<AdminLoginPage />} />
+        <Route path="/admin/forgot-password" element={<AdminForgotPasswordPage />} />
+        <Route path="/admin/reset-password" element={<AdminResetPasswordPage />} />
+        <Route path="/admin/dashboard" element={
+          <AdminProtectedRoute>
+            <AdminDashboard />
+          </AdminProtectedRoute>
+        } />
+        <Route path="/*" element={<PublicSite />} />
+      </Routes>
+    </AdminAuthProvider>
   )
 }
 
