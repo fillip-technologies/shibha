@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, useSearchParams, useNavigate } from 'react-router-dom'
+import { adminApi } from '../../api/adminApi'
 
 export default function AdminResetPasswordPage() {
   const [searchParams] = useSearchParams()
@@ -24,12 +25,7 @@ export default function AdminResetPasswordPage() {
 
     setLoading(true)
     try {
-      const res = await fetch('/api/admin/reset-password', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ token, password: form.password }),
-      })
-      const data = await res.json()
+      const data = await adminApi.resetPassword({ token, password: form.password })
       if (data.success) {
         setSuccess(true)
         setTimeout(() => navigate('/admin/login', { replace: true }), 2500)
@@ -133,7 +129,7 @@ export default function AdminResetPasswordPage() {
                   {loading ? (
                     <>
                       <svg className="h-4 w-4 animate-spin" fill="none" viewBox="0 0 24 24">
-                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth={4} />
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
                       </svg>
                       Resetting...

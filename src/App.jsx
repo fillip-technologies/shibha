@@ -11,11 +11,11 @@ import HybridSolar from './compoents/services/HybridSolar'
 import { QuoteModalProvider } from './context/QuoteModalContext'
 import { AdminAuthProvider } from './context/AdminAuthContext'
 import QuoteModal from './partials/QuoteModal'
-import AdminLoginPage from './admin/AdminLoginPage'
-import AdminForgotPasswordPage from './admin/AdminForgotPasswordPage'
-import AdminResetPasswordPage from './admin/AdminResetPasswordPage'
+import AdminLoginPage from './admin/login/AdminLoginPage'
+import AdminForgotPasswordPage from './admin/login/AdminForgotPasswordPage'
+import AdminResetPasswordPage from './admin/login/AdminResetPasswordPage'
 import AdminDashboard from './admin/AdminDashboard'
-import AdminProtectedRoute from './admin/AdminProtectedRoute'
+import AdminProtectedRoute from './admin/login/AdminProtectedRoute'
 
 function PublicSite() {
   return (

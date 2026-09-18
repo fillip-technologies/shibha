@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
-import { useAdminAuth } from '../context/AdminAuthContext'
+import { useAdminAuth } from '../../context/AdminAuthContext'
+import { adminApi } from '../../api/adminApi'
 
 export default function AdminLoginPage() {
   const { login } = useAdminAuth()
@@ -20,13 +21,7 @@ export default function AdminLoginPage() {
     if (!form.email || !form.password) return setError('Both fields are required')
     setLoading(true)
     try {
-      const res = await fetch('/api/admin/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        credentials: 'include',
-        body: JSON.stringify(form),
-      })
-      const data = await res.json()
+      const data = await adminApi.loginAdmin(form)
       if (data.success) {
         login(data.admin)
         navigate('/admin/dashboard', { replace: true })

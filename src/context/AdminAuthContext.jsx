@@ -1,4 +1,5 @@
 import { createContext, useContext, useState, useEffect } from 'react'
+import { adminApi } from '../api/adminApi'
 
 const AdminAuthContext = createContext(null)
 
@@ -7,8 +8,7 @@ export function AdminAuthProvider({ children }) {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('/api/admin/me', { credentials: 'include' })
-      .then(r => r.json())
+    adminApi.getAdminMe()
       .then(data => { if (data.success) setAdmin(data.admin) })
       .catch(() => {})
       .finally(() => setLoading(false))
@@ -17,7 +17,11 @@ export function AdminAuthProvider({ children }) {
   const login = (adminData) => setAdmin(adminData)
 
   const logout = async () => {
-    await fetch('/api/admin/logout', { method: 'POST', credentials: 'include' })
+    try {
+      await adminApi.logoutAdmin()
+    } catch {
+      // ignore
+    }
     setAdmin(null)
   }
 
