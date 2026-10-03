@@ -8,6 +8,10 @@ import ProjectsPage from './compoents/projects/ProjectsPage'
 import OnGridSolar from './compoents/services/OnGridSolar'
 import OffGridSolar from './compoents/services/OffGridSolar'
 import HybridSolar from './compoents/services/HybridSolar'
+import ResidentialSolar from './compoents/solutions/residentialsolar/ResidentialSolar'
+import CommercialSolar from './compoents/solutions/CommercialSolar'
+import IndustrialSolar from './compoents/solutions/IndustrialSolar'
+import PMSuryaGharSolar from './compoents/solutions/PMSuryaGharSolar'
 import { QuoteModalProvider } from './context/QuoteModalContext'
 import { AdminAuthProvider } from './context/AdminAuthContext'
 import QuoteModal from './partials/QuoteModal'
@@ -27,6 +31,10 @@ function PublicSite() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/solutions/residential" element={<ResidentialSolar />} />
+            <Route path="/solutions/commercial" element={<CommercialSolar />} />
+            <Route path="/solutions/industrial" element={<IndustrialSolar />} />
+            <Route path="/solutions/pm-surya-ghar" element={<PMSuryaGharSolar />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/services/on-grid" element={<OnGridSolar />} />
             <Route path="/services/off-grid" element={<OffGridSolar />} />

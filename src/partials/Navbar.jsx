@@ -36,20 +36,28 @@ const serviceDropdownItems = [
   },
 ]
 
+const solutionDropdownItems = [
+  { label: 'Residential Solar', href: '/solutions/residential' },
+  { label: 'Commercial Solar', href: '/solutions/commercial' },
+  { label: 'Industrial Solar', href: '/solutions/industrial' },
+  { label: 'PM Surya Ghar Solar', href: '/solutions/pm-surya-ghar' },
+]
+
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
-  { label: 'Services', href: '#', hasDropdown: true },
+  { label: 'Services', href: '#', hasDropdown: true, dropdownId: 'services', items: serviceDropdownItems },
   { label: 'Projects', href: '/projects' },
+  { label: 'Solutions', href: '#', hasDropdown: true, dropdownId: 'solutions', items: solutionDropdownItems },
   { label: 'Contact', href: '/contact' },
 ]
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
-  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false)
-  const dropdownRef = useRef(null)
+  const [openDropdown, setOpenDropdown] = useState(null)
+  const [openMobileDropdown, setOpenMobileDropdown] = useState(null)
+  const navRef = useRef(null)
   const dropdownTimeout = useRef(null)
   const location = useLocation()
   const { openQuoteModal } = useQuoteModal()
@@ -65,37 +73,37 @@ function Navbar() {
 
   // Close dropdown on route change
   useEffect(() => {
-    setIsDropdownOpen(false)
+    setOpenDropdown(null)
     setIsOpen(false)
-    setIsMobileServicesOpen(false)
+    setOpenMobileDropdown(null)
   }, [location])
 
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
-        setIsDropdownOpen(false)
+      if (navRef.current && !navRef.current.contains(e.target)) {
+        setOpenDropdown(null)
       }
     }
     document.addEventListener('mousedown', handleClickOutside)
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
-  const handleDropdownEnter = () => {
+  const handleDropdownEnter = (dropdownId) => {
     clearTimeout(dropdownTimeout.current)
-    setIsDropdownOpen(true)
+    setOpenDropdown(dropdownId)
   }
 
   const handleDropdownLeave = () => {
     dropdownTimeout.current = setTimeout(() => {
-      setIsDropdownOpen(false)
+      setOpenDropdown(null)
     }, 150)
   }
 
   const handleNavClick = (e, link) => {
     if (link.hasDropdown) {
       e.preventDefault()
-      setIsDropdownOpen((prev) => !prev)
+      setOpenDropdown((prev) => (prev === link.dropdownId ? null : link.dropdownId))
       return
     }
 
@@ -119,13 +127,12 @@ function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <ul className="hidden items-center gap-8 lg:flex">
+        <ul ref={navRef} className="hidden items-center gap-7 xl:gap-8 lg:flex">
           {navLinks.map((link) => (
             <li
               key={link.label}
               className="relative"
-              ref={link.hasDropdown ? dropdownRef : undefined}
-              onMouseEnter={link.hasDropdown ? handleDropdownEnter : undefined}
+              onMouseEnter={link.hasDropdown ? () => handleDropdownEnter(link.dropdownId) : undefined}
               onMouseLeave={link.hasDropdown ? handleDropdownLeave : undefined}
             >
               {link.hasDropdown ? (
@@ -134,12 +141,12 @@ function Navbar() {
                     type="button"
                     onClick={(e) => handleNavClick(e, link)}
                     className="nav-link inline-flex items-center gap-1 cursor-pointer"
-                    aria-expanded={isDropdownOpen}
+                    aria-expanded={openDropdown === link.dropdownId}
                     aria-haspopup="true"
                   >
                     {link.label}
                     <svg
-                      className={`h-3.5 w-3.5 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`}
+                      className={`h-3.5 w-3.5 transition-transform duration-200 ${openDropdown === link.dropdownId ? 'rotate-180' : ''}`}
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -151,41 +158,59 @@ function Navbar() {
 
                   {/* Dropdown Panel */}
                   <div
-                    className={`absolute left-1/2 top-full z-50 w-72 -translate-x-1/2 pt-3 transition-all duration-200 ${isDropdownOpen ? 'visible translate-y-0 opacity-100' : 'invisible -translate-y-2 opacity-0'
-                      }`}
+                    className={`absolute left-1/2 top-full z-50 ${
+                      link.dropdownId === 'solutions' ? 'w-64' : 'w-80'
+                    } -translate-x-1/2 pt-3 transition-all duration-200 ${
+                      openDropdown === link.dropdownId
+                        ? 'visible translate-y-0 opacity-100'
+                        : 'invisible -translate-y-2 opacity-0 pointer-events-none'
+                    }`}
                   >
                     <div className="overflow-hidden rounded-2xl border border-slate-200/60 bg-white shadow-xl shadow-emerald-100/20">
-                      <div className="p-2">
-                        {serviceDropdownItems.map((item) => (
+                      <div className="p-2 space-y-0.5">
+                        {link.items?.map((item) => (
                           <Link
                             key={item.label}
                             to={item.href}
-                            className="flex items-start gap-3 rounded-xl p-3 transition-all hover:bg-emerald-50 group"
+                            className={
+                              item.icon
+                                ? "flex items-start gap-3 rounded-xl p-3 transition-all hover:bg-emerald-50 group"
+                                : "flex items-center justify-between rounded-xl px-4 py-2.5 text-sm font-semibold text-slate-800 transition-all hover:bg-emerald-50 hover:text-emerald-700 group"
+                            }
+                            onClick={() => setOpenDropdown(null)}
                           >
-                            <span className="mt-0.5 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-emerald-100 text-emerald-600 transition-colors group-hover:bg-emerald-600 group-hover:text-white">
-                              {item.icon}
-                            </span>
-                            <div>
-                              <span className="block text-sm font-bold text-slate-900 group-hover:text-emerald-700">
-                                {item.label}
-                              </span>
-                              <span className="block text-xs text-slate-500 mt-0.5">
-                                {item.desc}
-                              </span>
-                            </div>
+                            {item.icon ? (
+                              <>
+                                <span className="mt-0.5 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-emerald-100 text-emerald-600 transition-colors group-hover:bg-emerald-600 group-hover:text-white">
+                                  {item.icon}
+                                </span>
+                                <div>
+                                  <span className="block text-sm font-bold text-slate-900 group-hover:text-emerald-700">
+                                    {item.label}
+                                  </span>
+                                  <span className="block text-xs text-slate-500 mt-0.5">
+                                    {item.desc}
+                                  </span>
+                                </div>
+                              </>
+                            ) : (
+                              <>
+                                <span className="transition-transform group-hover:translate-x-1 font-semibold">
+                                  {item.label}
+                                </span>
+                                <svg
+                                  className="h-3.5 w-3.5 text-emerald-600 opacity-0 -translate-x-1 transition-all group-hover:opacity-100 group-hover:translate-x-0"
+                                  fill="none"
+                                  viewBox="0 0 24 24"
+                                  stroke="currentColor"
+                                  strokeWidth={2.5}
+                                >
+                                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
+                              </>
+                            )}
                           </Link>
                         ))}
-                      </div>
-                      <div className="border-t border-slate-100 bg-slate-50/50 px-4 py-3">
-                        {/* <Link
-                          to="/#services"
-                          className="flex items-center gap-2 text-xs font-semibold text-emerald-600 transition hover:text-emerald-800"
-                        >
-                          View All Services
-                          <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                          </svg>
-                        </Link> */}
                       </div>
                     </div>
                   </div>
@@ -228,7 +253,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="border-t border-slate-100 bg-white lg:hidden">
+        <div className="border-t border-slate-100 bg-white lg:hidden max-h-[calc(100vh-5rem)] overflow-y-auto">
           <div className="site-container py-4">
             <ul className="flex flex-col gap-1">
               {navLinks.map((link) => (
@@ -237,12 +262,18 @@ function Navbar() {
                     <>
                       <button
                         type="button"
-                        onClick={() => setIsMobileServicesOpen((prev) => !prev)}
+                        onClick={() =>
+                          setOpenMobileDropdown((prev) =>
+                            prev === link.dropdownId ? null : link.dropdownId
+                          )
+                        }
                         className="flex w-full items-center justify-between rounded-md px-3 py-3 text-sm font-medium text-slate-700 transition hover:bg-emerald-50 hover:text-emerald-700 cursor-pointer"
                       >
                         {link.label}
                         <svg
-                          className={`h-4 w-4 transition-transform duration-200 ${isMobileServicesOpen ? 'rotate-180' : ''}`}
+                          className={`h-4 w-4 transition-transform duration-200 ${
+                            openMobileDropdown === link.dropdownId ? 'rotate-180' : ''
+                          }`}
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -251,22 +282,32 @@ function Navbar() {
                           <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                         </svg>
                       </button>
-                      {isMobileServicesOpen && (
+                      {openMobileDropdown === link.dropdownId && (
                         <ul className="ml-3 mt-1 space-y-1 border-l-2 border-emerald-200 pl-3">
-                          {serviceDropdownItems.map((item) => (
+                          {link.items?.map((item) => (
                             <li key={item.label}>
                               <Link
                                 to={item.href}
-                                className="flex items-center gap-2.5 rounded-md px-3 py-2.5 text-sm font-medium text-slate-600 transition hover:bg-emerald-50 hover:text-emerald-700"
+                                className={
+                                  item.icon
+                                    ? "flex items-center gap-2.5 rounded-md px-3 py-2.5 text-sm font-medium text-slate-600 transition hover:bg-emerald-50 hover:text-emerald-700"
+                                    : "block rounded-lg px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-emerald-50 hover:text-emerald-700"
+                                }
                                 onClick={() => setIsOpen(false)}
                               >
-                                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-100 text-emerald-600 flex-shrink-0">
-                                  {item.icon}
-                                </span>
-                                <div>
-                                  <span className="block text-sm font-semibold">{item.label}</span>
-                                  <span className="block text-[11px] text-slate-400">{item.desc}</span>
-                                </div>
+                                {item.icon ? (
+                                  <>
+                                    <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-100 text-emerald-600 flex-shrink-0">
+                                      {item.icon}
+                                    </span>
+                                    <div>
+                                      <span className="block text-sm font-semibold">{item.label}</span>
+                                      <span className="block text-[11px] text-slate-400">{item.desc}</span>
+                                    </div>
+                                  </>
+                                ) : (
+                                  <span>{item.label}</span>
+                                )}
                               </Link>
                             </li>
                           ))}
