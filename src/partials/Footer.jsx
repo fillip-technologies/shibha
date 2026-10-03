@@ -31,11 +31,6 @@ function Footer() {
     }
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    alert('Thank you! We will get in touch with you shortly.')
-  }
-
   return (
     <footer id="contact" className="relative border-t border-slate-900 bg-slate-950 text-white overflow-hidden">
       {/* Decorative top gradient border */}
@@ -61,16 +56,6 @@ function Footer() {
             <p className="max-w-sm text-sm leading-7 text-slate-400">
               Shibha Enterprises is a trusted MNRE-certified solar partner delivering custom rooftop, ground-mount, and hybrid energy systems to power a sustainable, zero-emission future.
             </p>
-
-            {/* Certification / Accreditation badge */}
-            <div className="flex items-center gap-2.5 rounded-lg border border-emerald-500/20 bg-emerald-950/20 px-3.5 py-2 w-fit">
-              <svg className="h-5 w-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
-              </svg>
-              <div className="text-[11px] font-semibold text-emerald-300 tracking-wide uppercase">
-                MNRE Authorized Partner
-              </div>
-            </div>
 
             {/* Social Icons */}
             <div className="flex items-center gap-3 mt-2">
@@ -205,28 +190,6 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            
-            {/* Quick Callback Request */}
-            <div className="border-t border-slate-900 pt-5">
-              <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2.5">
-                Request a Callback
-              </span>
-              <form onSubmit={handleSubmit} className="flex gap-2">
-                <input 
-                  type="email" 
-                  placeholder="Enter email..." 
-                  required
-                  className="flex-1 rounded-lg border border-slate-800 bg-slate-900 px-3 py-2 text-xs text-white placeholder-slate-500 focus:border-emerald-500 focus:outline-none"
-                />
-                <button 
-                  type="submit" 
-                  className="rounded-lg bg-emerald-600 px-3 py-2 text-xs font-bold text-white transition hover:bg-emerald-700 active:scale-95"
-                >
-                  Send
-                </button>
-              </form>
-            </div>
-
           </div>
 
         </div>
