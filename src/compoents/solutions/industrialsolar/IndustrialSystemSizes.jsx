@@ -1,111 +1,111 @@
 import { useState } from 'react'
 import { useQuoteModal } from '../../../context/QuoteModalContext'
 
-const commercialPlans = [
+const industrialPlans = [
   {
-    id: '15kW',
-    capacity: '15 kW System',
-    capacityNum: 15,
-    badge: 'Commercial Building',
-    recommendedFor: 'Offices, Retail Spaces & Commercial Buildings',
-    billRange: '₹22,000 - ₹35,000 / month',
-    panelsCount: '28 High-Efficiency Panels',
-    annualSavings: '₹1.98 Lakhs Reported',
-    co2Offset: '18 Tonnes / Year Reported CO₂ Offset',
-    systemType: 'Grid-Tied / Hybrid with Inverter & ACDB/DCDB Protection',
-    monitoring: 'Cloud-Based Software Telemetry',
-    netMetering: 'Net-Metering Supported (Utility Approved)',
-    appliances: [
-      'Commercial Air Conditioning & Fans',
-      'Office Workstations & Lighting',
-      'Water Pumps & Facility Power',
-      'ACDB & DCDB Electrical Protection',
+    id: '120kW',
+    capacity: '120 kW System',
+    capacityNum: 120,
+    badge: 'Cold Storage Farm',
+    recommendedFor: 'Agricultural Cold-Storage Facilities & Heavy Compressor Loads',
+    billRange: '₹1.8 Lakhs - ₹3.0 Lakhs / month',
+    panelsCount: '228 High-Efficiency Panels',
+    annualSavings: '₹15.84 Lakh Reported Annual Savings',
+    co2Offset: '144 Tonnes / Year Reported CO₂ Offset',
+    systemType: 'High-Capacity Inverter Architecture with Heavy Compressor Buffer',
+    monitoring: 'Industrial Monitoring Systems for Real-Time Control',
+    netMetering: 'Grid Interconnection & DISCOM Net-Metering Process',
+    equipment: [
+      'Heavy Chilling Compressors & Cold Rooms',
+      'Continuous Ventilation & Blowers',
+      'Water Circulation & Booster Pumps',
+      'Industrial-Grade Protection & ACDB/DCDB Isolation',
     ],
   },
   {
-    id: '25kW',
-    capacity: '25 kW System',
-    capacityNum: 25,
-    badge: 'School Campus',
-    recommendedFor: 'School & College Campuses, Institutes & Large Facilities',
-    billRange: '₹35,000 - ₹60,000 / month',
-    panelsCount: '47 High-Efficiency Panels',
-    annualSavings: '₹3.30 Lakhs Reported',
-    co2Offset: '30 Tonnes / Year Reported CO₂ Offset',
-    systemType: 'Grid-Tied with Optional Battery Backup for Critical Labs',
-    monitoring: 'Cloud-Based Software Telemetry',
-    netMetering: 'Net-Metering Supported (Utility Approved)',
-    appliances: [
-      'Classroom Lighting & Smart Boards',
-      'Computer Labs & Server Rooms',
-      'Administrative Block & Offices',
-      'Campus Water Booster Pumps',
+    id: '250kW',
+    capacity: '250 kW System',
+    capacityNum: 250,
+    badge: 'Industrial Warehouse Array',
+    recommendedFor: 'Factories, Warehouses, Logistics Centers & Production Units',
+    billRange: '₹3.5 Lakhs - ₹6.5 Lakhs / month',
+    panelsCount: '475 High-Efficiency Panels',
+    annualSavings: '₹33 Lakh Reported Annual Savings',
+    co2Offset: '300 Tonnes / Year Reported CO₂ Offset',
+    systemType: 'Completed in < 30 Days with Full DISCOM Approval',
+    monitoring: 'Industrial Monitoring Systems for Real-Time Control',
+    netMetering: 'HT / LT Grid Interconnection & DISCOM Approval',
+    equipment: [
+      'Heavy Machinery & Production Lines',
+      'Industrial Air Handling & Dust Extraction',
+      'Automated Sorting & Conveyor Systems',
+      'Robust Industrial Electrical Infrastructure',
     ],
   },
   {
-    id: '75kW',
-    capacity: '75 kW System',
-    capacityNum: 75,
-    badge: 'Hospital Solar',
-    recommendedFor: 'Hospitals, Nursing Homes & 24x7 Healthcare Facilities',
-    billRange: '₹1,00,000 - ₹1,80,000 / month',
-    panelsCount: '140 High-Efficiency Panels',
-    annualSavings: '₹9.90 Lakhs Reported',
-    co2Offset: '90 Tonnes / Year Reported CO₂ Offset',
-    systemType: 'Hybrid with Battery Backup / Solar-DG Sync for Critical Loads',
-    monitoring: 'Cloud-Based Software Telemetry',
-    netMetering: 'Net-Metering Supported (Utility Approved)',
-    appliances: [
-      'Critical Healthcare & ICU Loads',
-      'Hospital Diagnostic & Imaging Equipment',
-      'Central Hospital HVAC & Lifts',
-      'Uninterrupted Power Supply (UPS) Support',
+    id: '500kW',
+    capacity: '500 kW System',
+    capacityNum: 500,
+    badge: 'Solar Array Farm',
+    recommendedFor: 'Utility-Scale Installations, Large Industrial Plants & Solar Farms',
+    billRange: '₹7.0 Lakhs - ₹13.0 Lakhs / month',
+    panelsCount: '950 Bifacial Panels',
+    annualSavings: '₹66 Lakh Reported Annual Savings',
+    co2Offset: '600 Tonnes / Year Reported CO₂ Offset',
+    systemType: 'Utility-Scale Installation with Advanced Tracking Systems',
+    monitoring: 'Industrial Monitoring Systems for Real-Time Control',
+    netMetering: 'HT Substation Dedicated Feeder Synchronization',
+    equipment: [
+      'Bifacial Dual-Sided Solar Absorption',
+      'Advanced Tracking Systems for Solar Capture',
+      'High-Power Centralized / Multi-String Inverters',
+      'Full Grid Interconnection & Distribution Protection',
     ],
   },
   {
-    id: '100kW+',
-    capacity: '100 kW+ Custom System',
-    capacityNum: 100,
-    badge: 'Large Enterprise',
-    recommendedFor: 'Malls, Hotels, Factories & Multi-Storey Commercial Complexes',
-    billRange: '₹1.5 Lakhs - ₹10 Lakhs+ / month',
-    panelsCount: 'Custom Scaled (180+ Panels)',
-    annualSavings: '₹13 Lakhs+ Projected Annual Savings',
-    co2Offset: '120+ Tonnes / Year CO₂ Offset',
-    systemType: 'High-Capacity Grid-Tied or Multi-Inverter Hybrid Matrix',
-    monitoring: 'Enterprise Multi-User Cloud Telemetry',
-    netMetering: 'HT / LT Net-Metering Supported',
-    appliances: [
-      'Multi-Storey Central Chillers & Escalators',
-      'Factory Machinery & High-Bay Lighting',
-      'Cold Storage & Refrigeration Units',
-      'Full Campus Integration & Backup Power',
+    id: '1MW+',
+    capacity: '1 MW+ Megawatt Scale',
+    capacityNum: 1000,
+    badge: 'Utility Solar Farm',
+    recommendedFor: 'Multi-Acre Industrial Campuses, Mega Factories & Solar Power Plants',
+    billRange: '₹15 Lakhs - ₹50 Lakhs+ / month',
+    panelsCount: '1,900+ Bifacial Modules',
+    annualSavings: '₹1.3+ Crores Projected Annual Savings',
+    co2Offset: '1,200+ Tonnes / Year CO₂ Offset',
+    systemType: 'Comprehensive Megawatt Scale Solar Power Plant',
+    monitoring: 'Industrial Monitoring Systems for Real-Time Control',
+    netMetering: '33kV Substation Dedicated Feeder Synchronization',
+    equipment: [
+      'Dual-Axis / Single-Axis Solar Tracking Integration',
+      'Central Inverter Substation Switchyard',
+      'Heavy Continuous Industrial Process Loads',
+      'Turnkey Commissioning, Testing & Maintenance',
     ],
   },
 ]
 
-export default function CommercialSystemSizes() {
-  const [activePlanId, setActivePlanId] = useState('25kW')
+export default function IndustrialSystemSizes() {
+  const [activePlanId, setActivePlanId] = useState('250kW')
   const { openQuoteModal } = useQuoteModal()
 
-  const currentPlan = commercialPlans.find((p) => p.id === activePlanId) || commercialPlans[1]
+  const currentPlan = industrialPlans.find((p) => p.id === activePlanId) || industrialPlans[1]
 
   return (
-    <section id="commercial-sizes" className="pt-6 sm:pt-8 pb-16 sm:pb-20 bg-white overflow-hidden scroll-mt-10">
+    <section id="industrial-sizes" className="pt-6 sm:pt-8 pb-16 sm:pb-20 bg-white overflow-hidden scroll-mt-10">
       <div className="site-container">
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-10">
           <h2 className="text-3xl sm:text-4xl font-black text-slate-900 leading-tight">
-            Commercial Solar Capacities & Configurations
+            Industrial Solar Capacities & Configurations
           </h2>
           <p className="mt-4 text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
-            Solar systems can be planned and scaled for multi-storey buildings, institutional campuses, and other properties with significant energy demand.
+            Suited for various capacity requirements, whether you run a factory, warehouse, cold storage, production unit, or utility-scale solar farm.
           </p>
         </div>
 
         {/* Capacity Selector Tabs */}
         <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-10">
-          {commercialPlans.map((plan) => (
+          {industrialPlans.map((plan) => (
             <button
               key={plan.id}
               onClick={() => setActivePlanId(plan.id)}
@@ -149,7 +149,7 @@ export default function CommercialSystemSizes() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 mb-6">
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/80 shadow-xs">
                   <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Hardware Sizing</p>
-                  <p className="text-lg font-black text-slate-900 mt-1">{currentPlan.panelsCount}</p>
+                  <p className="text-base sm:text-lg font-black text-slate-900 mt-1">{currentPlan.panelsCount}</p>
                   <p className="text-[10px] text-emerald-600 font-medium mt-0.5">High-efficiency modules</p>
                 </div>
 
@@ -160,16 +160,16 @@ export default function CommercialSystemSizes() {
                 </div>
 
                 <div className="p-4 rounded-2xl bg-white border border-slate-200/80 shadow-xs">
-                  <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Environmental Impact</p>
+                  <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Carbon Offset</p>
                   <p className="text-sm font-black text-[#064E3B] mt-1">{currentPlan.co2Offset}</p>
-                  <p className="text-[10px] text-slate-500 font-medium mt-0.5">Carbon reduction</p>
+                  <p className="text-[10px] text-slate-500 font-medium mt-0.5">Emission reduction</p>
                 </div>
               </div>
 
               {/* System Architecture Banner */}
               <div className="rounded-2xl bg-[#064E3B] text-white p-5 mb-6 shadow-md">
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#6EE7B7] block mb-1">
-                  INTEGRATED ARCHITECTURE
+                  SYSTEM ARCHITECTURE & APPROVALS
                 </span>
                 <p className="text-sm sm:text-base font-bold text-white mb-2">
                   {currentPlan.systemType}
@@ -185,23 +185,23 @@ export default function CommercialSystemSizes() {
               </div>
             </div>
 
-            {/* Right 5 Cols: Loads & CTA */}
+            {/* Right 5 Cols: Equipment Powered & CTA */}
             <div className="lg:col-span-5 bg-white p-6 sm:p-7 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between h-full">
               <div>
                 <h4 className="text-base font-bold text-slate-900 mb-1">
-                  Supported Loads & Electrical Equipment
+                  Supported Industrial Loads
                 </h4>
                 <p className="text-xs text-slate-500 mb-4">
-                  Planned and designed around your business energy needs
+                  Custom engineered around your operational needs
                 </p>
 
                 <div className="space-y-2.5 mb-6">
-                  {currentPlan.appliances.map((app, idx) => (
+                  {currentPlan.equipment.map((item, idx) => (
                     <div key={idx} className="flex items-center gap-2.5 p-2.5 rounded-xl bg-slate-50 border border-slate-100 text-xs text-slate-700">
                       <span className="h-5 w-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-[10px] flex-shrink-0">
                         ✓
                       </span>
-                      <span>{app}</span>
+                      <span>{item}</span>
                     </div>
                   ))}
                 </div>
