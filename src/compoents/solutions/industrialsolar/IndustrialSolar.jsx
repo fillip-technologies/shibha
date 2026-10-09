@@ -8,24 +8,17 @@ import IndustrialSystemSizes from './IndustrialSystemSizes'
 import IndustrialProcess from './IndustrialProcess'
 import IndustrialContact from './IndustrialContact'
 import IndustrialFaq from './IndustrialFaq'
+import SEO from '../../../partials/SEO'
+import { seoConfig } from '../../../data/seoData'
 
 function IndustrialSolar() {
   useEffect(() => {
     window.scrollTo(0, 0)
-
-    // Set page SEO metadata
-    document.title = 'Industrial Solar Solutions in Patna by Shibha Enterprises'
-    let metaDesc = document.querySelector('meta[name="description"]')
-    if (!metaDesc) {
-      metaDesc = document.createElement('meta')
-      metaDesc.name = 'description'
-      document.head.appendChild(metaDesc)
-    }
-    metaDesc.content = 'Explore Industrial Solar Solutions in Patna for factories, warehouses, cold storage, and solar farms with high-capacity systems for power generation & savings.'
   }, [])
 
   return (
     <>
+      <SEO {...seoConfig.industrial} />
       <IndustrialHero />
       <IndustrialFeatureCards />
       <IndustrialOverview />

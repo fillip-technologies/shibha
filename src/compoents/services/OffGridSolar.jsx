@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import solar5 from '../../assets/images/solar-5.jpg'
 import solar4 from '../../assets/images/solar-4.jpg'
+import SEO from '../../partials/SEO'
+import { seoConfig } from '../../data/seoData'
 
 const systemEstimates = {
   '3kW': {
@@ -153,6 +155,7 @@ function OffGridSolar() {
 
   return (
     <div className="bg-slate-50 min-h-screen text-slate-800">
+      <SEO {...seoConfig.offGrid} />
 
       {/* ── Hero Banner ──────────────────────────────── */}
       <section className="relative overflow-hidden bg-slate-950 pt-32 pb-24 text-white">

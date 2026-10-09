@@ -7,6 +7,8 @@ import TeamSection from './TeamSection'
 import Certifications from './Certifications'
 import AboutFaq from './AboutFaq'
 import AboutCta from './AboutCta'
+import SEO from '../../partials/SEO'
+import { seoConfig } from '../../data/seoData'
 
 function AboutPage() {
   useEffect(() => {
@@ -15,6 +17,7 @@ function AboutPage() {
 
   return (
     <>
+      <SEO {...seoConfig.about} />
       <AboutHero />
       <OurStory />
       <WorkingProcess />

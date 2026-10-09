@@ -4,6 +4,8 @@ import ProjectsStats from './ProjectsStats'
 import ProjectsGallery from './ProjectsGallery'
 import ProjectsFaq from './ProjectsFaq'
 import ProjectsCta from './ProjectsCta'
+import SEO from '../../partials/SEO'
+import { seoConfig } from '../../data/seoData'
 
 function ProjectsPage() {
   useEffect(() => {
@@ -12,6 +14,7 @@ function ProjectsPage() {
 
   return (
     <>
+      <SEO {...seoConfig.projects} />
       <ProjectsHero />
       <ProjectsStats />
       <ProjectsGallery />

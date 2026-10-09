@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useQuoteModal } from '../../../context/QuoteModalContext'
-import install4 from '../../../assets/images/install-4.jpeg'
+import industrialHero from '../../../assets/images/industrial-hero.jpg'
 
 export default function IndustrialHero() {
   const [isVisible, setIsVisible] = useState(false)
@@ -16,7 +16,7 @@ export default function IndustrialHero() {
       {/* Heavy Industrial Solar Background */}
       <div 
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${install4})` }}
+        style={{ backgroundImage: `url(${industrialHero})` }}
       >
         {/* Deep industrial emerald & slate gradient overlays */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#032B25] via-[#04362E]/95 via-50% to-[#032B25]/75 lg:to-transparent" />

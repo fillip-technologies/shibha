@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import solar6 from '../../assets/images/solar-6.jpg'
 import solar8 from '../../assets/images/solar-8.jpg'
+import SEO from '../../partials/SEO'
+import { seoConfig } from '../../data/seoData'
 
 const systemEstimates = {
   '3kW': {
@@ -158,6 +160,7 @@ function HybridSolar() {
 
   return (
     <div className="bg-slate-50 min-h-screen text-slate-800">
+      <SEO {...seoConfig.hybrid} />
 
       {/* ── Hero Banner ──────────────────────────────── */}
       <section className="relative overflow-hidden bg-slate-950 pt-32 pb-24 text-white">

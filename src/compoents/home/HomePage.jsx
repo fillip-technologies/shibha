@@ -12,10 +12,13 @@ import PMSuryaGhar from './PMSuryaGhar'
 import Testimonials from './Testimonials'
 import HomeFaq from './HomeFaq'
 import CtaBanner from './CtaBanner'
+import SEO from '../../partials/SEO'
+import { seoConfig } from '../../data/seoData'
 
 function HomePage() {
   return (
     <>
+      <SEO {...seoConfig.home} />
       <Hero />
       <Stats />
       <Partnership />

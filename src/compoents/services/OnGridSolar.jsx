@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import solar3 from '../../assets/images/solar-3.jpg'
 import solar7 from '../../assets/images/solar-7.jpg'
+import SEO from '../../partials/SEO'
+import { seoConfig } from '../../data/seoData'
 
 const systemEstimates = {
   '3kW': {
@@ -153,6 +155,7 @@ function OnGridSolar() {
 
   return (
     <div className="bg-slate-50 min-h-screen text-slate-800">
+      <SEO {...seoConfig.onGrid} />
 
       {/* ── Hero Banner ──────────────────────────────── */}
       <section className="relative overflow-hidden bg-slate-950 pt-32 pb-24 text-white">

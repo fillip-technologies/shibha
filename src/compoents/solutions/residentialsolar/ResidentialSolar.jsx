@@ -7,24 +7,17 @@ import ResidentialBenefits from './ResidentialBenefits'
 import ResidentialProcess from './ResidentialProcess'
 import ResidentialContact from './ResidentialContact'
 import ResidentialFaq from './ResidentialFaq'
+import SEO from '../../../partials/SEO'
+import { seoConfig } from '../../../data/seoData'
 
 function ResidentialSolar() {
   useEffect(() => {
     window.scrollTo(0, 0)
-
-    // Set page SEO metadata
-    document.title = 'Residential Solar Installation in Patna | Rooftop Solar'
-    let metaDesc = document.querySelector('meta[name="description"]')
-    if (!metaDesc) {
-      metaDesc = document.createElement('meta')
-      metaDesc.name = 'description'
-      document.head.appendChild(metaDesc)
-    }
-    metaDesc.content = 'Get reliable Residential Solar Installation in Patna for homes and villas. Explore rooftop solar, net metering, energy savings, and efficient solar solutions.'
   }, [])
 
   return (
     <>
+      <SEO {...seoConfig.residential} />
       <ResidentialHero />
       <ResidentialFeatureCards />
       <ResidentialOverview />
